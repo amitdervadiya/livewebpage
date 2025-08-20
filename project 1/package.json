@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/postcss": "^4.1.11",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@iconify/tailwind": "^1.2.0",
+    "@iconify/tailwind4": "^1.0.6"
+  }
+}

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anek+Latin&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="hero  border w-[100%] flex justify-center">
+    <header class="h-[81px]  w-[90%]  sm:w-[100%] mx-auto ">
+      <div class="nav flex items-center justify-around   w-full md:justify-between ">
+
+        <div class="flex items-center gap-10">
+          <div class="logo">
+            <img src="img/logo.png" class="w-[137px] h-[73px]" alt="" style="filter: brightness(100%) invert(100%)">
+          </div>
+
+          <ul class="hidden md:flex gap-5 items-center">
+            <a href="">
+              <li class="nav-link ">home</li>
+            </a>
+            <a href="">
+              <li class="nav-link">about
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                    d="M36 18L24 30L12 18" />
+                </svg>
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-link">accommodation
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                    d="M36 18L24 30L12 18" />
+                </svg>
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-link">facilities</li>
+            </a>
+            <a href="">
+              <li class="nav-link">safaris & tours
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                    d="M36 18L24 30L12 18" />
+                </svg>
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-link">gallery</li>
+            </a>
+            <a href="">
+              <li class="nav-link">trip planner</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="hidden md:flex gap-5">
+          <button class="b1 md:hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+              <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path stroke-dasharray="64" stroke-dashoffset="64"
+                  d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                  <animateTransform id="SVG3Jm2WHSS" fill="freeze" attributeName="transform"
+                    begin="0.6s;SVG3Jm2WHSS.begin+2.7s" dur="0.5s" type="rotate"
+                    values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12" />
+                </path>
+                <path stroke-dasharray="4" stroke-dashoffset="4"
+                  d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0s" dur="2.7s"
+                    keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4" />
+                </path>
+                <path stroke-dasharray="6" stroke-dashoffset="6"
+                  d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0.2s" dur="2.7s"
+                    keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6" />
+                </path>
+              </g>
+            </svg>
+            +27 15 590 8328
+          </button>
+          <button class="b2 ">plan your safari</button>
+        </div>
+
+
+        <button class="md:hidden " id="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <g fill="none">
+              <path fill="#fff"
+                d="M20 18a1 1 0 0 1 .117 1.993L20 20H4a1 1 0 0 1-.117-1.993L4 18zm0-7a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2zm0-7a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
+            </g>
+          </svg>
+        </button>
+      </div>
+
+
+
+      <div id="mobile-menu"
+        class="md:hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center gap-6 text-white text-lg opacity-0 pointer-events-none transition duration-500">
+        <button id="close-menu" class="absolute top-5 right-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <a href="#" class="hover:text-gray-300 transition">Home</a>
+        <a href="#" class="hover:text-gray-300 transition">About</a>
+        <a href="#" class="hover:text-gray-300 transition">Accommodation</a>
+        <a href="#" class="hover:text-gray-300 transition">Facilities</a>
+        <a href="#" class="hover:text-gray-300 transition">Safaris & Tours</a>
+        <a href="#" class="hover:text-gray-300 transition">Gallery</a>
+        <a href="#" class="hover:text-gray-300 transition">Trip Planner</a>
+        <div class="flex flex-col gap-3 mt-4">
+          <button
+            class="h-[50px] w-[190px] flex justify-center items-center gap-2 border border-white text-white rounded hover:bg-white hover:text-black transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+              <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path stroke-dasharray="64" stroke-dashoffset="64"
+                  d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                  <animateTransform id="SVG3Jm2WHSS" fill="freeze" attributeName="transform"
+                    begin="0.6s;SVG3Jm2WHSS.begin+2.7s" dur="0.5s" type="rotate"
+                    values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12" />
+                </path>
+                <path stroke-dasharray="4" stroke-dashoffset="4"
+                  d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0s" dur="2.7s"
+                    keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4" />
+                </path>
+                <path stroke-dasharray="6" stroke-dashoffset="6"
+                  d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65">
+                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0.2s" dur="2.7s"
+                    keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6" />
+                </path>
+              </g>
+            </svg>
+            +27 15 590 8328
+          </button>
+          <button class="h-[50px] w-[190px] bg-[#849368] text-white rounded hover:bg-gray-200 transition">
+            Plan Your Safari
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+  </div>
+  <section class="h-[180px] w-full flex sec2">
+    <div class="box flex justify-center items-center">
+      <div class="img1 ">
+
+      </div>
+      <div class="description px-2.5 h-[120px] ">
+        <div class="flex items-center">
+          <img src="img/material-symbols--star.png" alt="" class="star">
+          <img src="img/material-symbols--star.png" alt="" class="star">
+          <img src="img/material-symbols--star.png" alt="" class="star">
+          <img src="img/material-symbols--star.png" alt="" class="star">
+          <img src="img/material-symbols--star.png" alt="" class="star">
+        </div>
+        <div class="text">
+          <h3>Tourism grading council <br>
+            of South Africa</h3>
+        </div>
+      </div>
+    </div>
+    <div class="box flex justify-center items-center">
+      <div class="img2">
+
+      </div>
+      <div class="description px-2.5 h-[120px] ">
+        <span class=" t1">google reviews</span>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+
+        </div>
+        <div class="text">
+          <span class="text-[16px]">4.9 stars | 125 reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="box3 flex justify-center items-center">
+      <div class="img3">
+        <img src="img/eye.png" alt="">
+      </div>
+      <div class="description px-2.5 h-[120px] ">
+        <span class=" t1">google reviews</span>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+            <path fill="#fbb004"
+              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+              stroke-width="0.3" stroke="#fbb004" />
+          </svg>
+
+        </div>
+        <div class="text">
+          <span class="text-[16px]">4.9 stars | 125 reviews</span>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <section class="bg-[#fdfaf4] flex justify-center   items-center">
+    <div class="max-w-7xl slide  w-full h-[520px] flex justify-evenly flex-col">
+
+      <div class="flex items-center w-full sl  justify-between ">
+        <div class="flex flex-col">
+          <p class="italic text-4xl text-[#998254] sm:text-2xl ex">Accommodations</p>
+          <h2 class="text-5xl  font-semibold text-[#3A3E2D] sm:text-3xl md:text-3xl explore">Explore Our Safari Lodges
+          </h2>
+        </div>
+
+        <div class="flex gap-2">
+          <button id="lodges-prev"
+            class="w-10 h-10 flex items-center justify-center rounded-full   shadow bg-[#998254] disabled:opacity-40"
+            aria-label="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m14 7l-5 5l5 5" />
+            </svg>
+          </button>
+          <button id="lodges-next"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#998254]  disabled:opacity-40"
+            aria-label="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m10 17l5-5l-5-5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+
+      <div id="lodges-slider"
+        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar slide1">
+
+
+        <article data-card
+          class="rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] min-h-[400px] snap-start ">
+          <img src="img/3fa2b8e36f7016397ecce17f0fbe82010325753e.png" alt="" class="w-full h-58 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Safari Lodge</h3>
+            <p class="text-[#5A5D59] text-sm mt-2">Located in the heart of the Greater Kruger, our 4 star luxury lodge
+              offers an...</p>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px]  font-medium hover:underline">View
+              More
+              Details</a>
+          </div>
+        </article>
+
+        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
+          <img src="img/d7d2e12e2a94142e4f4f0f8bedb2032fdf4579a8.png" alt="" class="w-full h-58 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">River Bungalows</h3>
+            <p class="text-[#5A5D59] text-sm mt-2">The 10 luxury River Bungalows in NYATI Safari Lodge are all facing
+              Olifant...</p>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px]  font-medium hover:underline">View
+              More
+              Details</a>
+          </div>
+        </article>
+
+        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
+          <img src="img/34e2702cbf4c218b573ea24e3bcb2305599bd6ca.jpg" alt="" class="w-full h-58 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Cheetah Camp</h3>
+            <p class="text-[#5A5D59] text-sm mt-2">If you are a group of 8 to 14 people who want your own private luxury
+              safari...</p>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px]  font-medium hover:underline">View
+              More
+              Details</a>
+          </div>
+        </article>
+
+        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
+          <img src="img/75fe56ac735d8221d468d028dac44c3d7905742f.png" alt="" class="w-full h-58 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Luxury Rhino Tents</h3>
+            <p class="text-[#5A5D59] text-sm mt-2">The 3 luxurious Rhino Tents at NYATI Safari Lodge are all facing
+              Olifants River...</p>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium hover:underline">View
+              More
+              Details</a>
+          </div>
+        </article>
+
+        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
+          <img src="img/6ceab2d15aa3cda87c40b7a9159edefb773670d3 (1).jpg" alt="" class="w-full h-58 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Olifant Villa Suites</h3>
+            <p class="text-[#5A5D59] text-sm mt-2">Private villas with river views…</p>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium hover:underline">View
+              More
+              Details</a>
+          </div>
+        </article>
+
+      </div>
+      <button class="w-[120px] bg-[#849368] uni-button universal">Book Now</button>
+    </div>
+  </section>
+
+  <div class="facilities-wrapper">
+    <section class="service">
+
+      <p class="subtitle">Explore</p>
+
+
+      <h2 class="title">Our Facilities</h2>
+
+
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector 8.png" alt="">
+          </div>
+          <p class="facility-text">Swimming Pool</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (1).png" alt="">
+          </div>
+          <p class="facility-text">Fitness</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (2).png" alt="">
+          </div>
+          <p class="facility-text">Restaurant</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (3).png" alt="">
+          </div>
+          <p class="facility-text">Car Fleet</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (4).png" alt="">
+          </div>
+          <p class="facility-text">Spa</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (5).png" alt="">
+          </div>
+          <p class="facility-text">Golf</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (6).png" alt="">
+          </div>
+          <p class="facility-text">Bar</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="icon-box">
+            <img src="img/Vector (7).png" alt="">
+          </div>
+          <p class="facility-text">Lounge</p>
+        </div>
+      </div>
+
+
+      <div class="button-wrap">
+        <button class="explore-btn">EXPLORE MORE</button>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="custom-section wave-bg grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="flex justify-center">
+      <div class="africa-shape"></div>
+    </div>
+
+    <!-- Right Content -->
+    <div>
+      <p class="italic text-[#8b6f47] universal">Safari Experiences</p>
+      <h2 class="text-3xl font-bold text-gray-800 universal">Why Choose Us</h2>
+      <p class="text-[#5A5D59] leading-relaxed universal">
+        Nyati Safari Lodge is situated on 10,000 hectares privately owned wilderness with direct access to the Greater
+        Kruger National Park in South Africa. When staying at Nyati Safari Lodge 2 daily game drives are included in
+        your stay (depending on your arrival and departure times).
+      </p>
+
+      <!-- Facilities + Story -->
+      <div class="flex flex-col lg:flex-row gap-8 universal">
+        <!-- Facilities List -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-4">
+          <div class="facility-item"><img src="img/Vector 12.png" class="vec" alt=""> Big Five Safaris</div>
+          <div class="facility-item"><img src="img/Vector 11.png" class="vec" alt=""> Private Game Drives</div>
+          <div class="facility-item"><img src="img/Vector 10.png" class="vec" alt=""> Night Safaris</div>
+          <div class="facility-item"><img src="img/Vector 9.png" class="vec" alt=""> Bush Dinners</div>
+          <div class="facility-item"><img src="img/Vector 8.png" class="vec" alt=""> Swimming Pool</div>
+        </div>
+
+        <!-- About Story -->
+        <div>
+          <h3 class="italic text-[#8b6f47] text-3xl">About our story</h3>
+          <p class="text-[#5A5D59] leading-relaxed universal mb-4">
+            Luxurious Nyati Safari Lodge offers a unique African safari <br>
+            experience. At the lodge you can pamper yourself with first class
+            <br> gastronomy and a fine selection of South African wine, beers
+            <br> and other beverages. The lodge came to life back in <br>1998 and is 100% Danish owned.
+          </p>
+
+          <button class="bg-[#6b7a4b] h-[50px] uni-button text-white universal rounded hover:bg-[#4d5535] transition">
+            START PLANNING YOUR SAFARI
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="w-full flex flex-col items-center justify-center bg-white testtimontal ">
+    <h3 class="italic text-3xl text-[#8b6f47]">Testimonials</h3>
+    <h2 class="text-4xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
+
+    <div class="relative w-full max-w-7xl overflow-hidden">
+      <!-- Slider -->
+      <div id="slider" class="flex transition-transform duration-500">
+
+        <!-- Slide 1 -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 slide12 ">
+          <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+            <div class="flex justify-center items-center gap-1.5"> <img src="img/icons8-google-logo-48.png" alt=""
+                class="h-[23px] w-[23px]">
+              <p class="text-yellow-500 text-xl">★★★★★</p>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Great place with beautiful views in and around the lodge, abundant wildlife, great atmosphere and highly
+              professional staff"
+            </p>
+            <p class="font-semibold">– Niels Kristian Bech Jensen</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 slide12">
+          <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+
+            <div class="flex justify-center items-center gap-1.5">
+              <div class="bg-[#34E0A1] h-[25px] w-[25px] flex justify-center items-center rounded-full"> <img
+                  src="img/eye.png" alt="" class="h-[15px] w-[20px]"></div>
+              <div class="flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="text-gray-600 mb-4">
+              "Excellent friendly service throughout the whole lodge while we were there. Friendly staff, great
+              hospitality."
+            </p>
+            <p class="font-semibold">– Ane Booysen</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 slide12">
+          <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+            <div class="flex justify-center items-center gap-1.5"> <img src="img/icons8-google-logo-48.png" alt=""
+                class="h-[23px] w-[23px]">
+              <p class="text-yellow-500 text-xl">★★★★★</p>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Thanks for a wonderful week. All the employees are wonderful and very smiling and helpful. Friendly
+              staff"
+            </p>
+            <p class="font-semibold">– Birthe Damgaard Madsen</p>
+          </div>
+        </div>
+
+        <!-- Add More Slides if Needed -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 slide12 ">
+          <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+            <div class="flex justify-center items-center gap-1.5"> <img src="img/icons8-google-logo-48.png" alt=""
+                class="h-[23px] w-[23px]">
+              <p class="text-yellow-500 text-xl">★★★★★</p>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Great place with beautiful views in and around the lodge, abundant wildlife, great atmosphere and highly
+              professional staff "
+            </p>
+            <p class="font-semibold">– Niels Kristian Bech Jensen</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 slide12">
+          <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+
+            <div class="flex justify-center items-center gap-1.5">
+              <div class="bg-[#34E0A1] h-[25px] w-[25px] flex justify-center items-center rounded-full"> <img
+                  src="img/eye.png" alt="" class="h-[15px] w-[20px]"></div>
+              <div class="flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#00AA6C"
+                    d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709" />
+                </svg>
+              </div>
+            </div>
+
+            <p class="text-gray-600 mb-4">
+              "Excellent friendly service throughout the whole lodge while we were there. Friendly staff, great
+              hospitality."
+            </p>
+            <p class="font-semibold">– Ane Booysen</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 slide12">
+          <div class="bg-white shadow-lg rounded-2xl p-6 text-center">
+            <div class="flex justify-center items-center gap-1.5"> <img src="img/icons8-google-logo-48.png" alt=""
+                class="h-[23px] w-[23px]">
+              <p class="text-yellow-500 text-xl">★★★★★</p>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Thanks for a wonderful week. All the employees are wonderful and very smiling and helpful. Friendly
+              staff"
+            </p>
+            <p class="font-semibold">– Birthe Damgaard Madsen</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-[#998254] hover:opacity-70 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+          <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m14 7l-5 5l5 5" />
+        </svg>
+      </button>
+      <button id="next"
+        class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#998254] hover:opacity-70 p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+          <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m10 17l5-5l-5-5" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section class="bg-[#fdf8f2] py-12 px-6">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+        <h3 class="italic text-[#8b6f47] mb-2">World-class</h3>
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Safari in Africa</h2>
+        <p class="text-gray-700 mb-6">
+          Located in the heart of the Greater Kruger, our 4-star luxury lodge offers an unforgettable safari experience.
+          Overlooking the picturesque Olifants River, our accommodations cater to all needs.
+        </p>
+
+        <!-- Features -->
+        <div class="grid grid-cols-2 gap-4 mb-6 text-gray-700">
+          <div>
+            <p class="font-semibold">River Bungalows:</p>
+            <p class="text-sm">9 luxurious units</p>
+          </div>
+          <div>
+            <p class="font-semibold">Family River Bungalow:</p>
+            <p class="text-sm">Spacious and comfortable</p>
+          </div>
+          <div>
+            <p class="font-semibold">Olifants Villa Suites:</p>
+            <p class="text-sm">2–4 bedrooms, perfect for families and groups</p>
+          </div>
+          <div>
+            <p class="font-semibold">Private Cheetah Camp:</p>
+            <p class="text-sm">Exclusive and secluded, sleeping 12+ guests</p>
+          </div>
+        </div>
+
+        <!-- Bullet Points -->
+        <ul class="space-y-2 text-gray-700 mb-6">
+          <li class="flex items-center gap-2"><span class=""><img src="img/CheckFat.png" alt=""></span> Gourmet meals
+            and snacks</li>
+          <li class="flex items-center gap-2"><span class=""><img src="img/CheckFat.png" alt=""></span> Refreshing
+            drinks and cocktails</li>
+          <li class="flex items-center gap-2"><span class=""><img src="img/CheckFat.png" alt=""></span> Twice-daily game
+            drives with expert guides</li>
+        </ul>
+
+        <!-- Button -->
+        <button class="bg-[var(--green)] text-white px-6 py-3 rounded-md shadow-md hover:bg-green-800 transition">
+          START PLANNING YOUR SAFARI
+        </button>
+      </div>
+
+      <!-- RIGHT IMAGES -->
+      <div class="relative">
+        <!-- Main Image -->
+        <img src="img/3654d5c327318b0ceb54531e6dbad441a16ae9be.jpg" alt="Safari Lodge"
+          class="rounded-lg shadow-lg w-full">
+
+        <!-- Small Overlapping Image -->
+        <img src="img/8f4097471c98a7bacd17bb2317666806c3fd9fe8.jpg" alt="Safari Elephant"
+          class="absolute bottom-[-40px] right-[-40px] w-48 md:w-56 rounded-lg shadow-xl border-4 border-white hidden sm:block">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tours-widget" class="flex w-full bg-[#f7f5f0] tour-position   p-6">
+    <!-- Left Section -->
+    <div
+      class=" bg-[#2c372a] text-white items-start px-3 w-1/5 py-1  h-[500px]   flex flex-col justify-center  tour-position-left z-0">
+      <div>
+        <h3 class="text-lg italic mb-2">Featured</h3>
+        <h2 class="text-3xl font-bold mb-6">Safaris & <br> Tours</h2>
+        <button class="bg-white text-[var(--green)] px-4 py-2 font-semibold rounded hover:bg-gray-200 transition">
+          Plan Your Safari
+        </button>
+        <p class="mt-4 text-sm flex gap-1.5"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 24 24">
+            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path stroke-dasharray="64" stroke-dashoffset="64"
+                d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                <animateTransform id="SVG3Jm2WHSS" fill="freeze" attributeName="transform"
+                  begin="0.6s;SVG3Jm2WHSS.begin+2.7s" dur="0.5s" type="rotate"
+                  values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12" />
+              </path>
+              <path stroke-dasharray="4" stroke-dashoffset="4"
+                d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0s" dur="2.7s"
+                  keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4" />
+              </path>
+              <path stroke-dasharray="6" stroke-dashoffset="6"
+                d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65">
+                <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0.2s" dur="2.7s"
+                  keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6" />
+              </path>
+            </g>
+          </svg> +27 10 500 0888</p>
+      </div>
+
+      <!-- Navigation + Dots -->
+      <div class="flex flex-col items-center space-y-4 mt-8">
+        <div class="flex space-x-4">
+          <button id="tours-prev" class="bg-[#FFFFFF1A] w-10 h-10 flex items-center justify-center rounded-full "
+            aria-label="Previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m14 7l-5 5l5 5" />
+            </svg>
+          </button>
+          <button id="tours-next" class="bg-[#FFFFFF1A] w-10 h-10 flex items-center justify-center rounded-full"
+            aria-label="Next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m10 17l5-5l-5-5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Section (viewport scrolls) -->
+    <div id="tours-viewport" class="overflow-x-auto tour-position-right  overflow-y-hidden scroll-smooth">
+      <div id="tours-track" class="flex gap-7 pr-4">
+        <!-- Card 1 -->
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">Hot Air Balloon</h3>
+            <p class="text-[14px] text-white">To hover silently over the landscapes <br> is a truly magical
+              experience. The balloon....</p>
+          </div>
+        </div>
+
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image2 min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">Quad bike safari</h3>
+            <p class="text-[14px] text-white">A fantastic and different kind of safari where nature and wildlife sets
+              the agenda...</p>
+          </div>
+        </div>
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image3 min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">Cultural Tour</h3>
+            <p class="text-[14px] text-white">n one hand, a modern country with well-functioning economy and
+              infrastructure</p>
+          </div>
+        </div>
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image4 min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">animals safari </h3>
+            <p class="text-[14px] text-white">To hover silently over the landscapes <br> is a truly magical
+              experience. The balloon....</p>
+          </div>
+        </div>
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image5 min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">Hot Air Balloon</h3>
+            <p class="text-[14px] text-white">To hover silently over the landscapes <br> is a truly magical
+              experience. The balloon....</p>
+          </div>
+        </div>
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image6 min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">Hot Air Balloon</h3>
+            <p class="text-[14px] text-white">To hover silently over the landscapes <br> is a truly magical
+              experience. The balloon....</p>
+          </div>
+        </div>
+        <div data-card
+          class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image1 min-h-[350px] max-h-[400px] justify-start  items-end flex">
+          <div class="p-4">
+            <h3 class="font-bold text-white text-3xl ">Kruger National Park</h3>
+            <p class="text-[14px] text-white">The park, which is now over 100 years old, is one of the best safari parks
+              in the...</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-contact flex flex-col justify-start items-center px-4 sm:px-6 md:px-10 py-10">
+    <div class="contact-safari w-full max-w-4xl px-4 flex flex-col justify-around items-center text-center gap-6">
+
+      <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-semibold">Secure Your Spot for 2025</h3>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl text-[var(--green)] font-bold">Start Your Safari Inquiry</h2>
+
+      <!-- Form Row -->
+      <div class="form-row w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+        <input type="text" placeholder="Name" class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="text" placeholder="Email" class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="number" placeholder="Phone No" class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="date" placeholder="Travel Date" class="indesign w-full sm:w-[48%] md:w-[23%]">
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 items-center">
+        <button class="bg-[var(--green)] px-6 py-2 text-white rounded-md shadow-md hover:scale-105 transition">Start
+          Planning Your Safari</button>
+
+        <button
+          class="flex px-6 py-2 justify-center items-center gap-2 border border-white text-white rounded-md hover:bg-white hover:text-[var(--green)] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path
+                d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
+            </g>
+          </svg>
+          +27 15 590 8328
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="w-full bg-[#fdfbf5] py-16 px-6 md:px-12 flex flex-col justify-center items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-start w-[70%] justify-between md:flex ">
+
+
+      <div class=" px-3.5 h-[400px] md:h-[500px] ac ">
+
+        <div class="bg-opacity-70 text-white h-[400px] px-4 flex justify-center flex-col py-4 w-full">
+          <h2 class="text-3xl">faq</h2>
+          <h3 class="text-4xl  font-bold  ">Frequently <br> Asked Questions</h3>
+          <button
+            class="mt-4 flex text-center mb-3 justify-center gap-1.5 bg-white px-3 py-2  text-[#3D4340] font-bold text-sm md:text-base">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#3D4340"
+                d="M24 14a4.5 4.5 0 0 0-3-4.24V9A9 9 0 0 0 3 9v.76a4.5 4.5 0 0 0 0 8.48a1.54 1.54 0 0 0 1.37-.18A1.53 1.53 0 0 0 5 16.83V9a7 7 0 0 1 14 0v7.83a1.5 1.5 0 0 0 .5 1.1v.57c0 1.48-1.29 2-2.5 2h-1.78a2 2 0 1 0-1.72 3a2 2 0 0 0 1.72-1H17c2.65 0 4.5-1.64 4.5-4V18a4.5 4.5 0 0 0 2.5-4" />
+              <path fill="#3D4340"
+                d="M10.75 16.75a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0-2.5 0M9.5 10.5a1.25 1.25 0 0 0 1.25-1.25a1.25 1.25 0 1 1 1.75 1.15a2.91 2.91 0 0 0-1.75 2.67v.56a1.25 1.25 0 1 0 2.5 0v-.56a.42.42 0 0 1 .25-.38a3.75 3.75 0 1 0-5.25-3.44A1.25 1.25 0 0 0 9.5 10.5" />
+            </svg> TALK TO OUR SAFARI EXPERTS
+          </button>
+          <button class="flex px-5 py-2 justify-center items-center gap-2 border border-white text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path
+                  d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
+              </g>
+            </svg>
+            +27 15 590 8328
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Accordion -->
+      <div class="space-y-4 w-[50%] max-sm:w-[100%] max-md:w-full flex flex-col justify-center ">
+        <div class="border rounded-lg overflow-hidden ">
+          <button
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            Do I need a visa? <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+            Yes, depending on your nationality you may need a visa before entering.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            Do I need any vaccinations? <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+            Some vaccinations may be required. Please consult your doctor.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            Do I need travel insurance? <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+            Yes, we highly recommend travel insurance with cancellation coverage.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            Should I bring cash? <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+            It’s advisable to bring some cash in USD for tips and emergencies.
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden">
+          <button
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            Should I bring mosquito repellant? <span class="text-xl">+</span>
+          </button>
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+            Yes, mosquito repellent is recommended for your comfort.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="mt-20 text-center w-full ">
+      <div class="flex w-full justify-between   px-5 mb-2">
+        <div class="justify-start flex flex-col items-start">
+          <p class="italic text-[#A5A495]  text-4xl">Gallery</p>
+          <h2 class="text-5xl md:text-4xl font-bold ">Visual Showcase</h2>
+        </div>
+
+        <button class="bg-[var(--green)] h-[50px] w-[130px] py-1.5 text-white ">
+          VIEW GALLERY
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+           <div class="relative group w-full h-52 overflow-hidden rounded-lg">
+          <img src="img/16be513a14544233dc63996ed0b689555a0c4a99 (1).png" 
+               alt="Room"
+               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
+                      translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
+            <h3 class="text-lg font-semibold">Room</h3>
+          </div>
+        </div>
+      
+        <div class="relative group w-full h-52 overflow-hidden rounded-lg">
+          <img src="img/4b1a8f9324b9bf842921abb0ca70724b75ad5bf1.jpg" 
+               alt="Jeep Safari"
+               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
+                      translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
+            <h3 class="text-lg font-semibold">Jeep Safari</h3>
+          </div>
+        </div>
+      
+        <div class="relative group w-full h-52 overflow-hidden rounded-lg">
+          <img src="img/c7729a7ef042ae31cc716f1a2026f5c96f352ba1.png" 
+               alt="People"
+               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
+                      translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
+            <h3 class="text-lg font-semibold">People</h3>
+          </div>
+        </div>
+ 
+        <div class="relative group w-full h-52 overflow-hidden rounded-lg">
+          <img src="img/da58c21f4e29564196c04af5badcf5f3bdad5450.jpg" 
+               alt="Food"
+               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
+                      translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
+            <h3 class="text-lg font-semibold">Food</h3>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+
+
+  
+
+
+
+  <section class="relative bg-cover  bg-no-repeat h-[100vh]" 
+  style="background-image: url('img/60fe7f61661cb0fdf8e747c366d60e48644acf28.png');">
+
+  <!-- Overlay Filter -->
+  <div class="absolute inset-0 bg-gradient-to-t from-[#5a4c2f]/90 via-[#5a4c2f]/60 to-transparent"></div>
+
+  <div class="relative container mx-auto px-6 py-16 text-white flex flex-col justify-between h-full">
+
+    <!-- Newsletter -->
+    <div class="text-center">
+      <p class="text-lg italic">Get Exclusive Safari Deals & Tips!</p>
+      <h2 class="text-3xl font-bold mb-4">Join Our Newsletter</h2>
+      <form class="flex justify-center items-center gap-3 max-w-lg mx-auto">
+        <input type="email" placeholder="Email" 
+          class="px-4 py-2 w-full rounded-md border border-gray-300 focus:outline-none text-gray-900" />
+        <button type="submit" 
+          class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-md">
+          SUBSCRIBE NOW
+        </button>
+      </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+
+      <!-- Logo + About -->
+      <div>
+        <img src="img/footer.png" alt="Logo" class="mb-4 w-40">
+        <p class="mb-4">
+          Located in the heart of the Greater Kruger, at our luxury lodges enjoy an unforgettable safari experience.
+        </p>
+        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md">PLAN YOUR SAFARI</a>
+        <div class="flex gap-3 mt-4">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Accommodation</a></li>
+          <li><a href="#" class="hover:underline">Facilities</a></li>
+          <li><a href="#" class="hover:underline">Safari’s & Tours</a></li>
+          <li><a href="#" class="hover:underline">Gallery</a></li>
+          <li><a href="#" class="hover:underline">Trip Planner</a></li>
+          <li><a href="#" class="hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Accommodation -->
+      <div>
+        <h3 class="font-semibold mb-3">Accommodation</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Nyati Safari Lodge</a></li>
+          <li><a href="#" class="hover:underline">River Bungalows</a></li>
+          <li><a href="#" class="hover:underline">Cheetha Camp</a></li>
+          <li><a href="#" class="hover:underline">Rhino Tents</a></li>
+          <li><a href="#" class="hover:underline">Cheetah Villa Suite</a></li>
+          <li><a href="#" class="hover:underline">Family River Bungalow</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold mb-3">Contact Us</h3>
+        <p>1 Portion of 1 Parsons, 156KU, 1380 Hoedspruit, Limpopo<br>South Africa</p>
+        <p class="mt-2">📞 +27 15 590 8282<br>📱 +27 82 600 8282</p>
+        <p class="mt-2">✉️ info@nyatisafarilodge.co.za</p>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class=" flex flex-col md:flex-row items-center justify-between text-xs border-t border-white/20 pt-4">
+      <p>© Nyati 2025. All Rights Reserved. | Privacy Policy | Terms & Conditions</p>
+      <p>Website by PIXLOOK</p>
+    </div>
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const closeBtn = document.getElementById('close-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+    mobileMenu.classList.add('opacity-100');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+    mobileMenu.classList.remove('opacity-100');
+  });
+</script>
+<script>
+  const slider = document.getElementById('lodges-slider');
+  const prevBtn = document.getElementById('lodges-prev');
+  const nextBtn = document.getElementById('lodges-next');
+
+  // Scroll by exactly one card (width + gap)
+  function stepSize() {
+    const card = slider.querySelector('[data-card]');
+    if (!card) return 320;
+    const gap = parseInt(getComputedStyle(slider).gap || 0, 10);
+    return Math.round(card.getBoundingClientRect().width + gap);
+  }
+
+  function updateArrows() {
+    const maxLeft = slider.scrollWidth - slider.clientWidth - 1;
+    prevBtn.disabled = slider.scrollLeft <= 0;
+    nextBtn.disabled = slider.scrollLeft >= maxLeft;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: stepSize(), behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -stepSize(), behavior: 'smooth' });
+  });
+
+  slider.addEventListener('scroll', updateArrows);
+  window.addEventListener('resize', updateArrows);
+  // init
+  document.addEventListener('DOMContentLoaded', () => setTimeout(updateArrows, 0));
+</script>
+<script>
+  const slider1 = document.getElementById("slider");
+  const next = document.getElementById("next");
+  const prev = document.getElementById("prev");
+
+  let currentIndex = 0;
+  const totalSlides = slider1.children.length;
+
+  // Function to detect visible slides based on screen size
+  function getVisibleSlides() {
+    if (window.innerWidth < 640) return 1; // mobile
+    if (window.innerWidth < 1024) return 2; // tablet
+    return 3; // desktop
+  }
+
+  function updateSlider() {
+    const visibleSlides = getVisibleSlides();
+    slider1.style.transform = `translateX(-${(100 / visibleSlides) * currentIndex}%)`;
+  }
+
+  next.addEventListener("click", () => {
+    const visibleSlides = getVisibleSlides();
+    if (currentIndex < totalSlides - visibleSlides) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  prev.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  window.addEventListener("resize", updateSlider);
+</script>
+
+<script>
+  (() => {
+    // Scope everything to this widget to avoid conflicts with other sliders
+    const widget = document.getElementById('tours-widget');
+    const viewport = widget.querySelector('#tours-viewport');   // scroll container
+    const track = widget.querySelector('#tours-track');         // flex track
+    const btnPrev = widget.querySelector('#tours-prev');
+    const btnNext = widget.querySelector('#tours-next');
+    const dots = widget.querySelectorAll('.tours-dot');
+
+    // Calculate one step = card width + gap
+    function getStep() {
+      const card = track.querySelector('[data-card]');
+      if (!card) return 320;
+      const cardRect = card.getBoundingClientRect();
+      const gap = parseInt(getComputedStyle(track).gap || 0, 9);
+      return Math.round(cardRect.width + gap);
+    }
+
+    // How many are visible right now?
+    function getVisibleCount() {
+      return Math.max(1, Math.floor(viewport.clientWidth / getStep()));
+    }
+
+    function getActiveIndex() {
+      return Math.round(viewport.scrollLeft / getStep());
+    }
+
+    function setActiveDot() {
+      const idx = Math.min(getActiveIndex(), dots.length - 1);
+      dots.forEach((d, i) => d.style.opacity = i === idx ? '1' : '0.5');
+    }
+
+    function toggleArrows() {
+      const maxLeft = viewport.scrollWidth - viewport.clientWidth - 1;
+      btnPrev.disabled = viewport.scrollLeft <= 0;
+      btnNext.disabled = viewport.scrollLeft >= maxLeft;
+    }
+
+    function goBy(step) {
+      viewport.scrollBy({ left: step * getStep(), behavior: 'smooth' });
+    }
+
+    // Events
+    btnNext.addEventListener('click', () => goBy(1));
+    btnPrev.addEventListener('click', () => goBy(-1));
+
+    viewport.addEventListener('scroll', () => {
+      toggleArrows();
+      setActiveDot();
+    });
+
+    window.addEventListener('resize', () => {
+      // Keep alignment on resize
+      viewport.scrollTo({ left: getActiveIndex() * getStep(), behavior: 'instant' });
+      toggleArrows();
+      setActiveDot();
+    });
+
+    // Dots click -> jump
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        const maxIdx = Math.max(0, track.querySelectorAll('[data-card]').length - getVisibleCount());
+        const target = Math.min(i, maxIdx);
+        viewport.scrollTo({ left: target * getStep(), behavior: 'smooth' });
+      });
+    });
+
+    // Init
+    setTimeout(() => {
+      toggleArrows();
+      setActiveDot();
+    }, 0);
+  })();
+</script>
+
+<!-- Accordion Script -->
+<script>
+  document.querySelectorAll(".accordion-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      const isOpen = !content.classList.contains("hidden");
+
+      // Close all
+      document.querySelectorAll(".accordion-content").forEach((c) => c.classList.add("hidden"));
+      document.querySelectorAll(".accordion-btn span").forEach((s) => s.textContent = "+");
+
+      // Open clicked one
+      if (!isOpen) {
+        content.classList.remove("hidden");
+        btn.querySelector("span").textContent = "−";
+      }
+    });
+  });
+</script>
