@@ -22,9 +22,10 @@ a{
 }
 
 .hero {
-  background-image: url(img/Banner.png);
+  background-image: url(img/8e14d242fd2abaa9dbb2ff0fc5b834244655393c.jpg),linear-gradient(Black,Black,Black);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 850px;
   width: 100%;
 
@@ -90,7 +91,7 @@ a{
   width: 83px;
   height: 120px;
   background-size: cover;
-  margin-right: 15px;
+
 }
 
 .img2 {
@@ -98,8 +99,7 @@ a{
   width: 70px;
   height: 70px;
   background-size: cover;
-  margin-right: 15px;
-  margin-bottom: 30px;
+ 
 }
 
 .img3 {
@@ -110,8 +110,7 @@ a{
   height: 70px;
   background-color: #34E0A1;
   border-radius: 100%;
-  margin-right: 15px;
-  margin-bottom: 30px;
+
 }
 
 .star {
@@ -179,7 +178,7 @@ a{
   /* flex-direction: column; */
   gap: 10px;
   align-items: center;
-  padding: 16px;
+  padding: 10px;
 
 }
 
@@ -470,7 +469,14 @@ a{
   .facility-text {
     font-size: 20px;
   }
+  .b2{
+    display: none;
+  }
+  .b1{
+    display: none;
+  }
 }
+
 
 
 /* Mobile adjustments */
