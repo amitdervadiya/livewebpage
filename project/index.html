@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Anek+Latin&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <div class="hero  border w-[100%] flex justify-center">
+  <div class="hero  border w-[100%] flex items-center  flex-col">
     <header class="h-[81px]  w-[90%]  sm:w-[100%] mx-auto ">
       <div class="nav flex items-center justify-around   w-full md:justify-between ">
 
@@ -151,10 +154,51 @@
           </button>
         </div>
       </div>
+
+
+
     </header>
+    <div class="flex w-[80%]  h-full items-center">
+      <div class=" z-10 flex flex-col items-start justify-center text-white">
+        <h2 class="italic text-3xl mb-2 text-white">Unforgettable</h2>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          Luxury Safari <br /> Experiences in Africa
+        </h1>
 
+        <div class="flex items-center space-x-6 mb-6">
+          <span class="flex items-center space-x-2">
+            <img src="img/Check circle.png" alt="">
+            <span>Private Reserves</span>
+          </span>
+          <span class="flex items-center space-x-2">
+            <img src="img/Check circle.png" alt="">
 
+            <span>Luxury Lodges</span>
+          </span>
+          <span class="flex items-center space-x-2">
+            <img src="img/Check circle.png" alt="">
+
+            <span>Exclusive Experiences</span>
+          </span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex space-x-4">
+          <button
+            class="px-6 py-3 bg-[#C7C5B1] text-[var(--green)] font-semibold hover:bg-[#a2a27a] hover:text-white transition rounded">
+            PLAN YOUR SAFARI
+          </button>
+          <button
+            class="px-6 py-3 bg-transparent border border-white font-semibold hover:bg-white hover:text-black transition rounded">
+            VIEW OUR ACCOMMODATIONS
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
   <section class="h-[180px] w-full flex sec2">
     <div class="box flex justify-center items-center">
       <div class="img1 ">
@@ -175,45 +219,51 @@
       </div>
     </div>
     <div class="box flex justify-center items-center">
-      <div class="img2">
-
-      </div>
-      <div class="description px-2.5 h-[120px] ">
-        <span class=" t1">google reviews</span>
-        <div class="flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-            <path fill="#fbb004"
-              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-              stroke-width="0.3" stroke="#fbb004" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-            <path fill="#fbb004"
-              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-              stroke-width="0.3" stroke="#fbb004" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-            <path fill="#fbb004"
-              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-              stroke-width="0.3" stroke="#fbb004" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-            <path fill="#fbb004"
-              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-              stroke-width="0.3" stroke="#fbb004" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-            <path fill="#fbb004"
-              d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
-              stroke-width="0.3" stroke="#fbb004" />
-          </svg>
-
+      <div class="flex justify-center ">
+        <div class="img2">
         </div>
-        <div class="text">
-          <span class="text-[16px]">4.9 stars | 125 reviews</span>
+        <div class="description px-2.5 h-[120px] ">
+          <span class=" t1">google reviews</span>
+          <div class="flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+              <path fill="#fbb004"
+                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                stroke-width="0.3" stroke="#fbb004" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+              <path fill="#fbb004"
+                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                stroke-width="0.3" stroke="#fbb004" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+              <path fill="#fbb004"
+                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                stroke-width="0.3" stroke="#fbb004" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+              <path fill="#fbb004"
+                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                stroke-width="0.3" stroke="#fbb004" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+              <path fill="#fbb004"
+                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
+                stroke-width="0.3" stroke="#fbb004" />
+            </svg>
+
+          </div>
+
+          <div class="text">
+            <span class="text-[16px]">4.9 stars | 125 reviews</span>
+          </div>
         </div>
       </div>
+
+
+
     </div>
     <div class="box3 flex justify-center items-center">
+      <div class="flex justify-center ">
       <div class="img3">
         <img src="img/eye.png" alt="">
       </div>
@@ -250,24 +300,27 @@
         <div class="text">
           <span class="text-[16px]">4.9 stars | 125 reviews</span>
         </div>
+        </div>
       </div>
     </div>
 
 
   </section>
-  <section class="bg-[#fdfaf4] flex justify-center   items-center">
-    <div class="max-w-7xl slide  w-full h-[520px] flex justify-evenly flex-col">
+  <section class="bg-[#fdfaf4] flex justify-center items-center">
+    <div class="max-w-7xl slide w-full h-[520px] flex justify-evenly flex-col">
 
-      <div class="flex items-center w-full sl  justify-between ">
+      <!-- Title + Arrows -->
+      <div class="flex items-center w-full justify-between">
         <div class="flex flex-col">
-          <p class="italic text-4xl text-[#998254] sm:text-2xl ex">Accommodations</p>
-          <h2 class="text-5xl  font-semibold text-[#3A3E2D] sm:text-3xl md:text-3xl explore">Explore Our Safari Lodges
-          </h2>
+          <h2 class="italic text-4xl text-[#998254] sm:text-2xl">Accommodations</h2>
+          <h1 class="text-5xl font-semibold text-[#3A3E2D] sm:text-3xl md:text-3xl mb-3">
+            Explore Our Safari Lodges
+          </h1>
         </div>
 
         <div class="flex gap-2">
           <button id="lodges-prev"
-            class="w-10 h-10 flex items-center justify-center rounded-full   shadow bg-[#998254] disabled:opacity-40"
+            class="w-10 h-10 flex items-center justify-center rounded-full shadow bg-[#998254] disabled:opacity-40"
             aria-label="Previous">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
               <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -275,7 +328,7 @@
             </svg>
           </button>
           <button id="lodges-next"
-            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#998254]  disabled:opacity-40"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-[#998254] disabled:opacity-40"
             aria-label="Next">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
               <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -285,83 +338,82 @@
         </div>
       </div>
 
-
+      <!-- Lodges Slider -->
       <div id="lodges-slider"
-        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar slide1">
+        class="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory no-scrollbar">
 
-
+        <!-- Card 1 -->
         <article data-card
-          class="rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] min-h-[400px] snap-start ">
-          <img src="img/3fa2b8e36f7016397ecce17f0fbe82010325753e.png" alt="" class="w-full h-58 object-cover">
+          class="rounded-lg min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] h-[400px] snap-start overflow-hidden bg-white shadow-md">
+          <img src="img/3fa2b8e36f7016397ecce17f0fbe82010325753e.png" alt="" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-lg font-semibold">Safari Lodge</h3>
             <p class="text-[#5A5D59] text-sm mt-2">Located in the heart of the Greater Kruger, our 4 star luxury lodge
               offers an...</p>
-            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px]  font-medium hover:underline">View
-              More
-              Details</a>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium">View More Details</a>
           </div>
         </article>
 
-        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
-          <img src="img/d7d2e12e2a94142e4f4f0f8bedb2032fdf4579a8.png" alt="" class="w-full h-58 object-cover">
+        <!-- Card 2 -->
+        <article data-card
+          class="rounded-lg min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] h-[400px] snap-start overflow-hidden bg-white shadow-md">
+          <img src="img/d7d2e12e2a94142e4f4f0f8bedb2032fdf4579a8.png" alt="" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-lg font-semibold">River Bungalows</h3>
             <p class="text-[#5A5D59] text-sm mt-2">The 10 luxury River Bungalows in NYATI Safari Lodge are all facing
               Olifant...</p>
-            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px]  font-medium hover:underline">View
-              More
-              Details</a>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium">View More Details</a>
           </div>
         </article>
 
-        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
-          <img src="img/34e2702cbf4c218b573ea24e3bcb2305599bd6ca.jpg" alt="" class="w-full h-58 object-cover">
+        <!-- Card 3 -->
+        <article data-card
+          class="rounded-lg min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] h-[400px] snap-start overflow-hidden bg-white shadow-md">
+          <img src="img/34e2702cbf4c218b573ea24e3bcb2305599bd6ca.jpg" alt="" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-lg font-semibold">Cheetah Camp</h3>
             <p class="text-[#5A5D59] text-sm mt-2">If you are a group of 8 to 14 people who want your own private luxury
               safari...</p>
-            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px]  font-medium hover:underline">View
-              More
-              Details</a>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium">View More Details</a>
           </div>
         </article>
 
-        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
-          <img src="img/75fe56ac735d8221d468d028dac44c3d7905742f.png" alt="" class="w-full h-58 object-cover">
+        <!-- Card 4 -->
+        <article data-card
+          class="rounded-lg min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] h-[400px] snap-start overflow-hidden bg-white shadow-md">
+          <img src="img/75fe56ac735d8221d468d028dac44c3d7905742f.png" alt="" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-lg font-semibold">Luxury Rhino Tents</h3>
             <p class="text-[#5A5D59] text-sm mt-2">The 3 luxurious Rhino Tents at NYATI Safari Lodge are all facing
               Olifants River...</p>
-            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium hover:underline">View
-              More
-              Details</a>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium">View More Details</a>
           </div>
         </article>
 
-        <article data-card class="  rounded-lg  min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] snap-start">
-          <img src="img/6ceab2d15aa3cda87c40b7a9159edefb773670d3 (1).jpg" alt="" class="w-full h-58 object-cover">
+        <!-- Card 5 -->
+        <article data-card
+          class="rounded-lg min-w-[260px] sm:min-w-[300px] lg:min-w-[340px] h-[400px] snap-start overflow-hidden bg-white shadow-md">
+          <img src="img/6ceab2d15aa3cda87c40b7a9159edefb773670d3 (1).jpg" alt="" class="w-full h-48 object-cover">
           <div class="p-4">
             <h3 class="text-lg font-semibold">Olifant Villa Suites</h3>
             <p class="text-[#5A5D59] text-sm mt-2">Private villas with river views…</p>
-            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium hover:underline">View
-              More
-              Details</a>
+            <a href="#" class="mt-3 inline-block text-[#849368] underline text-[17px] font-medium">View More Details</a>
           </div>
         </article>
-
       </div>
-      <button class="w-[120px] bg-[#849368] uni-button universal">Book Now</button>
+
+      <button class="w-[120px] bg-[#849368] text-white py-2 mt-6 rounded universal">Book Now</button>
     </div>
   </section>
+
 
   <div class="facilities-wrapper">
     <section class="service">
 
-      <p class="subtitle">Explore</p>
+      <h2 class="subtitle">Explore</h2>
 
 
-      <h2 class="title">Our Facilities</h2>
+      <h1 class="title">Our Facilities</h1>
 
 
       <div class="facilities-grid">
@@ -437,8 +489,8 @@
 
     <!-- Right Content -->
     <div>
-      <p class="italic text-[#8b6f47] universal">Safari Experiences</p>
-      <h2 class="text-3xl font-bold text-gray-800 universal">Why Choose Us</h2>
+      <h2 class="italic text-[#8b6f47] text-3xl universal">Safari Experiences</h2>
+      <h1 class="text-3xl font-bold text-gray-800 universal">Why Choose Us</h1>
       <p class="text-[#5A5D59] leading-relaxed universal">
         Nyati Safari Lodge is situated on 10,000 hectares privately owned wilderness with direct access to the Greater
         Kruger National Park in South Africa. When staying at Nyati Safari Lodge 2 daily game drives are included in
@@ -458,7 +510,7 @@
 
         <!-- About Story -->
         <div>
-          <h3 class="italic text-[#8b6f47] text-3xl">About our story</h3>
+          <h2 class="italic text-[#8b6f47] text-3xl">About our story</h2>
           <p class="text-[#5A5D59] leading-relaxed universal mb-4">
             Luxurious Nyati Safari Lodge offers a unique African safari <br>
             experience. At the lodge you can pamper yourself with first class
@@ -476,8 +528,8 @@
 
 
   <section class="w-full flex flex-col items-center justify-center bg-white testtimontal ">
-    <h3 class="italic text-3xl text-[#8b6f47]">Testimonials</h3>
-    <h2 class="text-4xl font-bold text-gray-800 mb-6">Customer Reviews</h2>
+    <h2 class="italic text-3xl text-[#8b6f47]">Testimonials</h2>
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">Customer Reviews</h1>
 
     <div class="relative w-full max-w-7xl overflow-hidden">
       <!-- Slider -->
@@ -643,8 +695,8 @@
 
       <!-- LEFT CONTENT -->
       <div>
-        <h3 class="italic text-[#8b6f47] mb-2">World-class</h3>
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Safari in Africa</h2>
+        <h2 class="italic text-[#8b6f47] mb-2">World-class</h2>
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Safari in Africa</h1>
         <p class="text-gray-700 mb-6">
           Located in the heart of the Greater Kruger, our 4-star luxury lodge offers an unforgettable safari experience.
           Overlooking the picturesque Olifants River, our accommodations cater to all needs.
@@ -700,16 +752,18 @@
     </div>
   </section>
 
-  <section id="tours-widget" class="flex w-full bg-[#f7f5f0] tour-position   p-6">
+  <section id="tours-widget"
+    class="flex w-full bg-[#f7f5f0] tour-position  max-sm:flex-col max-sm:justify-center max-sm:  p-6">
     <!-- Left Section -->
-    <div
-      class=" bg-[#2c372a] text-white items-start px-3 w-1/5 py-1  h-[500px]   flex flex-col justify-center  tour-position-left z-0">
+    <div class=" bg-[#2c372a] text-white items-center max-lg:items-start max-sm:items-center max-lg:px-2 w-2/5 py-1  max-md:w-max  h-[500px] max-sm:w-full 
+        flex flex-col justify-center  tour-position-left max-md:z-10 z-0">
       <div>
         <h3 class="text-lg italic mb-2">Featured</h3>
-        <h2 class="text-3xl font-bold mb-6">Safaris & <br> Tours</h2>
+        <h2 class="text-3xl font-bold mb-6">Safaris &  Tours</h2>
         <button class="bg-white text-[var(--green)] px-4 py-2 font-semibold rounded hover:bg-gray-200 transition">
           Plan Your Safari
         </button>
+        
         <p class="mt-4 text-sm flex gap-1.5"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
             viewBox="0 0 24 24">
             <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -756,8 +810,8 @@
     </div>
 
     <!-- Slider Section (viewport scrolls) -->
-    <div id="tours-viewport" class="overflow-x-auto tour-position-right  overflow-y-hidden scroll-smooth">
-      <div id="tours-track" class="flex gap-7 pr-4">
+    <div id="tours-viewport" class="overflow-x-auto tour-position-right w-full   overflow-y-hidden scroll-smooth">
+      <div id="tours-track" class="flex gap-7 max-md:gap-2 pr-4 ">
         <!-- Card 1 -->
         <div data-card
           class="min-w-[300px] bg-white shadow-lg max-w-[450px] slide-image min-h-[350px] max-h-[400px] justify-start  items-end flex">
@@ -828,8 +882,8 @@
   <section class="bg-contact flex flex-col justify-start items-center px-4 sm:px-6 md:px-10 py-10">
     <div class="contact-safari w-full max-w-4xl px-4 flex flex-col justify-around items-center text-center gap-6">
 
-      <h3 class="text-2xl sm:text-3xl md:text-4xl text-white font-semibold">Secure Your Spot for 2025</h3>
-      <h2 class="text-3xl sm:text-4xl md:text-5xl text-[var(--green)] font-bold">Start Your Safari Inquiry</h2>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl text-[var(--white)] ">Secure Your Spot for 2025</h2>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl text-[var(--green)] font-bold">Start Your Safari Inquiry</h1>
 
       <!-- Form Row -->
       <div class="form-row w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
@@ -866,8 +920,8 @@
       <div class=" px-3.5 h-[400px] md:h-[500px] ac ">
 
         <div class="bg-opacity-70 text-white h-[400px] px-4 flex justify-center flex-col py-4 w-full">
-          <h2 class="text-3xl">faq</h2>
-          <h3 class="text-4xl  font-bold  ">Frequently <br> Asked Questions</h3>
+          <h2 class="text-3xl mb-3">faq</h2>
+          <h1 class="text-4xl  font-bold  ">Frequently <br> Asked Questions</h1>
           <button
             class="mt-4 flex text-center mb-3 justify-center gap-1.5 bg-white px-3 py-2  text-[#3D4340] font-bold text-sm md:text-base">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -893,50 +947,50 @@
       <div class="space-y-4 w-[50%] max-sm:w-[100%] max-md:w-full flex flex-col justify-center ">
         <div class="border rounded-lg overflow-hidden ">
           <button
-            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            class="w-full flex justify-between items-center px-6 py-4 text-[#998254] bg-white text-left font-medium text-lg accordion-btn">
             Do I need a visa? <span class="text-xl">+</span>
           </button>
-          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-[#998254]">
             Yes, depending on your nationality you may need a visa before entering.
           </div>
         </div>
 
         <div class="border rounded-lg overflow-hidden">
           <button
-            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-[#998254] text-left font-medium text-lg accordion-btn">
             Do I need any vaccinations? <span class="text-xl">+</span>
           </button>
-          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-[#998254]">
             Some vaccinations may be required. Please consult your doctor.
           </div>
         </div>
 
         <div class="border rounded-lg overflow-hidden">
           <button
-            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            class="w-full flex justify-between items-center px-6 py-4 bg-white  text-[#998254] text-left font-medium text-lg accordion-btn">
             Do I need travel insurance? <span class="text-xl">+</span>
           </button>
-          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-[#998254]">
             Yes, we highly recommend travel insurance with cancellation coverage.
           </div>
         </div>
 
         <div class="border rounded-lg overflow-hidden">
           <button
-            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-[#998254] text-left font-medium text-lg accordion-btn">
             Should I bring cash? <span class="text-xl">+</span>
           </button>
-          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-[#998254]">
             It’s advisable to bring some cash in USD for tips and emergencies.
           </div>
         </div>
 
         <div class="border rounded-lg overflow-hidden">
           <button
-            class="w-full flex justify-between items-center px-6 py-4 bg-white text-left font-medium text-lg accordion-btn">
+            class="w-full flex justify-between items-center px-6 py-4 bg-white text-[#998254] text-left font-medium text-lg accordion-btn">
             Should I bring mosquito repellant? <span class="text-xl">+</span>
           </button>
-          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-gray-700">
+          <div class="accordion-content px-6 py-4 hidden bg-gray-50 text-[#998254]">
             Yes, mosquito repellent is recommended for your comfort.
           </div>
         </div>
@@ -945,105 +999,104 @@
 
     <!-- Gallery -->
     <div class="mt-20 text-center w-full ">
-      <div class="flex w-full justify-between   px-5 mb-2">
-        <div class="justify-start flex flex-col items-start">
-          <p class="italic text-[#A5A495]  text-4xl">Gallery</p>
-          <h2 class="text-5xl md:text-4xl font-bold ">Visual Showcase</h2>
+      <div class="flex w-full justify-between max-md:flex-col max-md:items-center px-5 mb-2">
+        <div class="justify-start  max-md:items-center flex flex-col items-start gap-2.5">
+          <h2 class="italic text-[#A5A495]  text-4xl mb-2">Gallery</h2>
+          <h1 class="text-5xl md:text-4xl font-bold text-[var(--green)]">Visual Showcase</h1>
         </div>
 
-        <button class="bg-[var(--green)] h-[50px] w-[130px] py-1.5 text-white ">
+        <button class="bg-[var(--green)] h-[50px] w-[130px] py-1.5 mt-2 text-white ">
           VIEW GALLERY
         </button>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-           <div class="relative group w-full h-52 overflow-hidden rounded-lg">
-          <img src="img/16be513a14544233dc63996ed0b689555a0c4a99 (1).png" 
-               alt="Room"
-               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+        <div class="relative group w-full h-52 overflow-hidden rounded-lg">
+          <img src="img/16be513a14544233dc63996ed0b689555a0c4a99 (1).png" alt="Room"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
           <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
                       translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
             <h3 class="text-lg font-semibold">Room</h3>
           </div>
         </div>
-      
+
         <div class="relative group w-full h-52 overflow-hidden rounded-lg">
-          <img src="img/4b1a8f9324b9bf842921abb0ca70724b75ad5bf1.jpg" 
-               alt="Jeep Safari"
-               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <img src="img/4b1a8f9324b9bf842921abb0ca70724b75ad5bf1.jpg" alt="Jeep Safari"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
           <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
                       translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
             <h3 class="text-lg font-semibold">Jeep Safari</h3>
           </div>
         </div>
-      
+
         <div class="relative group w-full h-52 overflow-hidden rounded-lg">
-          <img src="img/c7729a7ef042ae31cc716f1a2026f5c96f352ba1.png" 
-               alt="People"
-               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <img src="img/c7729a7ef042ae31cc716f1a2026f5c96f352ba1.png" alt="People"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
           <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
                       translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
             <h3 class="text-lg font-semibold">People</h3>
           </div>
         </div>
- 
+
         <div class="relative group w-full h-52 overflow-hidden rounded-lg">
-          <img src="img/da58c21f4e29564196c04af5badcf5f3bdad5450.jpg" 
-               alt="Food"
-               class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
+          <img src="img/da58c21f4e29564196c04af5badcf5f3bdad5450.jpg" alt="Food"
+            class="object-cover w-full h-full transform group-hover:scale-110 transition duration-500 ease-in-out">
           <div class="absolute bottom-0 left-0 w-full bg-black/60 text-white text-center py-3 
                       translate-y-full group-hover:translate-y-0 transition duration-500 ease-in-out">
             <h3 class="text-lg font-semibold">Food</h3>
           </div>
         </div>
       </div>
-      
+
 
     </div>
   </section>
 
 
-  
 
 
 
-  <section class="relative bg-cover  bg-no-repeat h-[100vh]" 
+  <section class="relative bg-cover bg-no-repeat min-h-screen"
   style="background-image: url('img/60fe7f61661cb0fdf8e747c366d60e48644acf28.png');">
 
   <!-- Overlay Filter -->
   <div class="absolute inset-0 bg-gradient-to-t from-[#5a4c2f]/90 via-[#5a4c2f]/60 to-transparent"></div>
 
-  <div class="relative container mx-auto px-6 py-16 text-white flex flex-col justify-between h-full">
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 text-white flex flex-col justify-between min-h-screen">
 
     <!-- Newsletter -->
-    <div class="text-center">
-      <p class="text-lg italic">Get Exclusive Safari Deals & Tips!</p>
-      <h2 class="text-3xl font-bold mb-4">Join Our Newsletter</h2>
-      <form class="flex justify-center items-center gap-3 max-w-lg mx-auto">
-        <input type="email" placeholder="Email" 
-          class="px-4 py-2 w-full rounded-md border border-gray-300 focus:outline-none text-gray-900" />
-        <button type="submit" 
-          class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-md">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl sm:text-lg italic">Get Exclusive Safari Deals & Tips!</h2>
+      <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4">Join Our Newsletter</h1>
+      <form class=" sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
+        <input type="email" placeholder="Email"
+          class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
+          
+        <button type="submit"
+          class="bg-[var(--green)] text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
           SUBSCRIBE NOW
         </button>
       </form>
     </div>
 
+    <!-- Hero Title -->
+    <h1 class="text-5xl sm:text-7xl md:text-[100px] lg:text-[150px] font-bold text-center leading-tight mb-12">
+      Nyati Safari Lodge
+    </h1>
+
     <!-- Footer Section -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 text-sm">
 
       <!-- Logo + About -->
       <div>
-        <img src="img/footer.png" alt="Logo" class="mb-4 w-40">
-        <p class="mb-4">
+        <img src="img/logo.png" alt="Logo" class="mb-4 w-32 sm:w-40">
+        <p class="mb-4 text-sm sm:text-base">
           Located in the heart of the Greater Kruger, at our luxury lodges enjoy an unforgettable safari experience.
         </p>
-        <a href="#" class="inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md">PLAN YOUR SAFARI</a>
-        <div class="flex gap-3 mt-4">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
+        <a href="#" class="inline-block bg-[var(--green)] text-white px-4 py-2 rounded-md text-sm sm:text-base">PLAN
+          YOUR SAFARI</a>
+        <!-- Socials -->
+      
       </div>
 
       <!-- Quick Links -->
@@ -1073,24 +1126,57 @@
         </ul>
       </div>
 
+      <!-- Other Links -->
+      <div>
+        <h3 class="font-semibold mb-3">Other Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Blogs</a></li>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+          <li><a href="#" class="hover:underline">Award</a></li>
+        </ul>
+      </div>
+
       <!-- Contact -->
       <div>
         <h3 class="font-semibold mb-3">Contact Us</h3>
-        <p>1 Portion of 1 Parsons, 156KU, 1380 Hoedspruit, Limpopo<br>South Africa</p>
-        <p class="mt-2">📞 +27 15 590 8282<br>📱 +27 82 600 8282</p>
-        <p class="mt-2">✉️ info@nyatisafarilodge.co.za</p>
+        <p class="text-sm sm:text-base">1 Portion of 1 Parsons, 156KU, 1380 Hoedspruit, Limpopo<br>South Africa</p>
+        <div class="mt-2 space-y-2">
+          <p class="flex gap-1.5 items-center text-sm sm:text-base">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
+            </svg> +27 15 590 8282
+          </p>
+          <p class="flex gap-1.5 items-center text-sm sm:text-base">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
+            </svg> +27 82 600 8282
+          </p>
+        </div>
+        <p class="mt-2 text-sm sm:text-base">info@nyatisafarilodge.co.za</p>
+      </div>
+
+      <!-- Badges -->
+      <div class="flex flex-wrap justify-center md:justify-start gap-4 md:col-span-5">
+        <img src="img/TripAdvisor.png" alt="" class="h-[60px] sm:h-[75px] w-auto">
+        <img src="img/Mask group (1).png" alt="" class="h-[60px] sm:h-[78px] w-auto">
+        <img src="img/Mask group.png" alt="" class="h-[60px] sm:h-[75px] w-auto">
+        <img src="img/Google.png" alt="" class="h-[60px] sm:h-[75px] w-auto">
       </div>
     </div>
 
     <!-- Bottom -->
-    <div class=" flex flex-col md:flex-row items-center justify-between text-xs border-t border-white/20 pt-4">
+    <div
+      class="flex flex-col md:flex-row items-center justify-between text-xs sm:text-sm border-t border-white/20 pt-4 mt-8 gap-2 text-center md:text-left">
       <p>© Nyati 2025. All Rights Reserved. | Privacy Policy | Terms & Conditions</p>
       <p>Website by PIXLOOK</p>
     </div>
   </div>
 </section>
 
-  
+
+
 
 
 
