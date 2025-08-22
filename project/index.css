@@ -28,6 +28,10 @@ h1{
 a{
   font-family: var(--font-subheading);
 }
+header{
+  position: sticky;
+  top: 0;
+}
 
 .hero {
   background: 
