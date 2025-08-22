@@ -12,6 +12,7 @@
   --green: #849368;
   --bgcream: #FFFbee;
   --white:#fff;
+  --grey:#998254;
   --font-heading: "Black Vosten", cursive;
   --font-subheading: "Host Grotesk", sans-serif;
 }
@@ -41,7 +42,6 @@ a{
   width: 100%;
 }
 
-
 .nav-link {
   text-transform: capitalize;
   color: white;
@@ -52,7 +52,6 @@ a{
   gap: 5px;
 
 }
-
 .b1 {
   border: 1px solid white;
   display: flex;
@@ -96,7 +95,6 @@ a{
   width: 32%;
   height: 80%;
 }
-
 .img1 {
   background-image: url('img/cecc610565aaf8d9b83f1abf43bfc2e5661965a4.png');
   width: 83px;
@@ -104,7 +102,6 @@ a{
   background-size: cover;
 
 }
-
 .img2 {
   background-image: url('img/icons8-google-logo-96.png');
   width: 70px;
@@ -112,7 +109,6 @@ a{
   background-size: cover;
  
 }
-
 .img3 {
   display: flex;
   align-items: center;
@@ -123,28 +119,23 @@ a{
   border-radius: 100%;
 
 }
-
 .star {
   height: 40px;
   width: 40px;
 }
-
 .text {
   padding-left: 5px;
 }
-
 .t1 {
   font-size: 20px;
   font-weight: lighter;
   font-weight: 400;
   text-transform: capitalize;
 }
-
 .slide {
   padding: 15px;
   margin-top: 15px;
 }
-
 .slide1 {
   margin-top: 15px;
 }
@@ -154,13 +145,11 @@ a{
   justify-content: center;
   padding: 40px 16px;
 }
-
 .service {
   text-align: center;
   max-width: 1200px;
   width: 100%;
 }
-
 .subtitle {
   font-style: italic;
   font-size: 24px;
@@ -173,7 +162,6 @@ a{
   margin: 12px 0 24px;
   position: relative;
 }
-
 .facilities-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -182,8 +170,6 @@ a{
 
   margin-bottom: 20px;
 }
-
-
 .facility-card {
   display: flex;
   /* flex-direction: column; */
@@ -192,7 +178,6 @@ a{
   /* padding: 10px; */
 
 }
-
 .icon-box {
   height: 70px;
   width: 70px;
@@ -204,7 +189,6 @@ a{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
 }
-
 .facility-text {
   color: #3D4340;
   font-weight: 500;
@@ -221,7 +205,6 @@ a{
   cursor: pointer;
   transition: background 0.3s;
 }
-
 .explore-btn:hover {
   background: #556237;
 }
@@ -261,31 +244,24 @@ a{
   border-bottom: 1px solid #3A3E2D;
   padding-bottom: 10px;
 }
-
 .facility-item span {
   color: #8b6f47;
 }
-
 .vec {
   height: 22px;
   width: 22px;
 }
-
 .universal {
   /* margin-bottom: 10px; */
   margin-top: 15px;
 }
-
 .uni-button {
   padding: 0px 10px;
   height: 50px;
 }
-
 .section-pad {
   padding: 56px 0;
 }
-
-/* card style */
 .card {
   background: #fff;
   border-radius: 16px;
@@ -294,18 +270,13 @@ a{
   border: 1px solid #f0f0f0;
   height: 100%;
 }
-
-/* hide scrollbar (works on all modern browsers) */
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
-/* nav buttons */
 .nav-btn {
   position: absolute;
   top: 50%;
@@ -320,16 +291,13 @@ a{
   box-shadow: 0 6px 14px rgba(139, 111, 71, .25);
   transition: background .2s ease, opacity .2s ease;
 }
-
 .nav-btn:hover {
   background: #6a5435;
 }
-
 .nav-btn[disabled] {
   opacity: .35;
   pointer-events: none;
 }
-
 .tour-position{
   position: relative;
 
@@ -374,7 +342,6 @@ a{
   background-size: cover;
   background-position: center;
 }
- 
 .bg-contact {
   min-height: 80vh;
   width: 100%;
@@ -383,7 +350,6 @@ a{
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .indesign {
   border-bottom: 1px solid white;
   background: transparent;
@@ -395,22 +361,17 @@ a{
 .indesign:focus {
   border-color: var(--green);
 }
-
-
 .ac{
   background-image: url(img/6ceab2d15aa3cda87c40b7a9159edefb773670d3\ \(1\).jpg);
   background-size: cover;
   background-position: center;
 }
-
 .button-wrap {
   margin-top: 20px;
 }
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -418,16 +379,34 @@ a{
 #tours-viewport { scroll-snap-type: x mandatory; scrollbar-width: none; }
 #tours-viewport::-webkit-scrollbar { display: none; }
 #tours-track > [data-card] { scroll-snap-align: start; }
-
-
 .testtimontal {
   padding: 10px 40px;
 }
-
 .slide12 {
   padding: 10px 25px;
 }
 
+/* about css */
+
+.about{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  url(img/63f5a3ca0663e050c4f2360df5f1df47da861d33.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 850px;
+width: 100%;
+}
+
+.map-image{
+  background-image: url(img/f5ef6eab42f688003e3c84b3e8225e397acdde14.png);
+  height: 450px;
+  width: 100%;
+  /* background-position: center; */
+  background-position-y:-15px;
+  background-size: cover;
+}
 @media (max-width:1312px) {
   .b2 {
     display: none;
