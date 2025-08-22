@@ -29,8 +29,11 @@ a{
   font-family: var(--font-subheading);
 }
 header{
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 0px;
+  background-color: black ;
+  backdrop-filter: blur(15px);
+
 }
 
 .hero {
