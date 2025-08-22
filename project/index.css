@@ -175,6 +175,7 @@ a{
   /* flex-direction: column; */
   gap: 10px;
   align-items: center;
+  
   /* padding: 10px; */
 
 }
@@ -534,7 +535,7 @@ width: 100%;
 
   .facility-card {
     flex-direction: row;
-    text-align: left;
+    text-align: center;
   }
 
   .icon-box {
