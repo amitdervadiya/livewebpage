@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <section class="about px-1 border w-[100%] flex items-center  flex-col">
-        <header class="h-[81px] px-4  w-[90%]  sm:w-[100%] mx-auto z-100">
-            <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
+    <section class="about px-1 border w-[100%] flex items-center py-2 flex-col">
+        <header class="h-[81px] px-4  w-[90%] max-sm:p-0 sm:w-[100%] mx-auto z-100">
+            <div class="nav flex items-center  justify-around max-md:justify-between  w-full px-4">
 
                 <div class="flex items-center gap-5">
                     <div class="logo">
@@ -116,8 +116,8 @@
                         <path d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <a href="#" class="hover:text-gray-300 transition">Home</a>
-                <a href="#" class="hover:text-gray-300 transition">About</a>
+                <a href="index.html"  class="hover:text-gray-300 transition">Home</a>
+                <a href="About.html" class="hover:text-gray-300 transition">About</a>
                 <a href="#" class="hover:text-gray-300 transition">Accommodation</a>
                 <a href="#" class="hover:text-gray-300 transition">Facilities</a>
                 <a href="#" class="hover:text-gray-300 transition">Safaris & Tours</a>
@@ -829,6 +829,21 @@
 </body>
 
 </html>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+      mobileMenu.classList.add('opacity-100');
+    });
+  
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+      mobileMenu.classList.remove('opacity-100');
+    });
+  </script>
 <script>
     const teamSlider = document.getElementById('team-slider');
     const prevBtnTeam = document.getElementById('team-prev');
