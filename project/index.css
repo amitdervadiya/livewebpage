@@ -28,13 +28,7 @@ h1{
 a{
   font-family: var(--font-subheading);
 }
-header{
-  position: fixed;
-  top: 0px;
-  background-color: black ;
-  backdrop-filter: blur(15px);
 
-}
 
 .hero {
   background: 
