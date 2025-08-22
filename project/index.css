@@ -486,6 +486,18 @@ a{
   .b1{
     display: none;
   }
+  .africa-shape {
+    position: relative;
+    width: 420px;
+    height: 550px;
+    background: url('img/9117ec36054461d0e1d5a8c1016c9b87a742faa6.jpg') cover;
+    -webkit-mask: url('Vector.png') no-repeat, cover;
+  
+    -webkit-mask-size: contain;
+    mask: url('img/Vector.png') no-repeat center/contain;
+  
+    mask-size: cover;
+  }
 }
 
 
@@ -552,6 +564,18 @@ a{
   .tour-position-right {
     left: 0;     /* ✅ Reset for tablets */
     margin-top: 20px;
+  }
+  .africa-shape {
+    position: relative;
+    width: 490px;
+    height: 374px;
+    background: url('img/9117ec36054461d0e1d5a8c1016c9b87a742faa6.jpg') 10px/cover;
+    -webkit-mask: url('Vector.png') no-repeat, cover;
+  
+    -webkit-mask-size: contain;
+    mask: url('img/Vector.png') no-repeat center/contain;
+  
+    mask-size: cover;
   }
 
 }
