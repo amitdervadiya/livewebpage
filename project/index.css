@@ -16,6 +16,15 @@
   --font-heading: "Black Vosten", cursive;
   --font-subheading: "Host Grotesk", sans-serif;
 }
+.blurwhite{
+  height: 400px;
+
+  background-color: white;
+  filter: blur(30px);
+  position: absolute;
+  top: -50px;
+  z-index: 1;
+}
 
 h2{
   font-family:Black Vosten ;
@@ -344,19 +353,20 @@ a{
   background-position: center;
 }
 .bg-contact {
-  min-height: 80vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url(img/5905544677e25c544250379632ba9734a6bdbdc0.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 .indesign {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   background: transparent;
   padding: 8px;
   outline: none;
-  color: white;
+  color: black;
   transition: border-color 0.3s ease;
 }
 .indesign:focus {
