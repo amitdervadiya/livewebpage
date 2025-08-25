@@ -18,7 +18,6 @@
 }
 .blurwhite{
   height: 400px;
-
   background-color: white;
   filter: blur(30px);
   position: absolute;
@@ -27,8 +26,8 @@
 }
 
 h2{
-  font-family:Black Vosten ;
-  /* color: #998254; */
+  font-family:Black Vosten;
+
 }
 
 h1{
@@ -39,7 +38,12 @@ a{
   font-family: var(--font-subheading);
 }
 
-
+.whatsaap{
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  z-index: 10;
+}
 .hero {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -396,6 +400,11 @@ a{
 .slide12 {
   padding: 10px 25px;
 }
+footer{
+  background-image: url(img/60fe7f61661cb0fdf8e747c366d60e48644acf28.png);
+  background-size: cover;
+  background-position-y: 120px;
+}
 
 /* about css */
 
@@ -414,9 +423,36 @@ width: 100%;
   background-image: url(img/f5ef6eab42f688003e3c84b3e8225e397acdde14.png);
   height: 450px;
   width: 100%;
-  /* background-position: center; */
   background-position-y:-15px;
   background-size: cover;
+}
+
+/* facilities css */
+.facilities{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  url(img/facilities.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 850px;
+width: 100%;
+}
+/* safari css */
+.safari{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  url(img/safari.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 900px;
+width: 100%;
+}
+
+.aside{
+  border-bottom: 1px solid rgba(41, 41, 43, 0.2);;
+  width: 100%;
 }
 @media (max-width:1312px) {
   .b2 {
@@ -443,7 +479,7 @@ width: 100%;
   }
 
   .sec2 {
-    /* flex-direction: column; */
+ 
     width: max-content;
     height: max-content;
   }
@@ -453,8 +489,8 @@ width: 100%;
     width: 100%;
     border-right: none;
     height: 80%;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    border-bottom: 1px solid rgba(41, 41, 43, 0.3);
+    border-right:  1px solid rgba(41, 41, 43, 0.2);
 
     padding: 10px 0;
   }
@@ -553,7 +589,7 @@ width: 100%;
     margin-right: 12px;
   }
   .tour-position-right {
-    left: 0;     /* ✅ Reset for tablets */
+    left: 0;   
     margin-top: 20px;
   }
   .africa-shape {
@@ -588,17 +624,20 @@ width: 100%;
 
   .sl {
     flex-direction: column;
-    /* justify-content: end; */
-    /* justify-content: space-between; */
+
   }
-  @media (max-width: 480px) {
+
     .tour-position-right {
-      left: 0;     /* ✅ Reset completely */
+      left: 0;   
       margin-top: 20px;
     }
-  }
+  
   .ex {
     font-size: 25px;
   }
+  footer{
+    height: max-content;
+  }
+
 
 }
