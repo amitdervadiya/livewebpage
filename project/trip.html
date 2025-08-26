@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>facilitys</title>
+    <title>trip planner</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Anek+Latin&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <section class="facilities px-1 border w-[100%] flex items-center py-2   flex-col">
-        <header class="h-[81px] px-4 max-sm:p-0 w-[90%]  sm:w-[100%] mx-auto z-100">
-            <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
+    <section class="trip px-1  w-[100%] flex items-center  py-2 flex-col h-full">
+        <header class="h-[81px] px-4  w-[90%] max-sm:p-0 sm:w-[100%] mx-auto z-100">
+            <div class="nav flex items-center  justify-around max-md:justify-between  w-full px-4">
 
                 <div class="flex items-center gap-5">
                     <div class="logo">
@@ -28,7 +28,7 @@
                         <a href="index.html">
                             <li class="nav-link ">home</li>
                         </a>
-                        <a href="About.html" target="">
+                        <a href="">
                             <li class="nav-link">about
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
                                     <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
@@ -64,7 +64,7 @@
                     </ul>
                 </div>
 
-                <div class="hidden md:flex gap-5">
+                <div class="hidden md:flex  gap-5  ">
                     <button class="b1 md:hidden ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                             <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
@@ -120,7 +120,7 @@
                 <a href="About.html" class="hover:text-gray-300 transition">About</a>
                 <a href="#" class="hover:text-gray-300 transition">Accommodation</a>
                 <a href="Facality.html" class="hover:text-gray-300 transition">Facilities</a>
-                <a href="Facality.html" class="hover:text-gray-300 transition">Safaris & Tours</a>
+                <a href="Safari&tours.html" class="hover:text-gray-300 transition">Safaris & Tours</a>
                 <a href="#" class="hover:text-gray-300 transition">Gallery</a>
                 <a href="trip.html" class="hover:text-gray-300 transition">Trip Planner</a>
                 <div class="flex flex-col gap-3 mt-4">
@@ -162,70 +162,149 @@
 
         </header>
         <div class="flex w-[80%]  h-full items-center">
-            <div class=" z-10 flex flex-col items-start justify-center text-white">
-                <h2 class="italic text-3xl mb-2 text-white">Facilities</h2>
+            <div class="z-10 flex flex-col items-start justify-center text-white">
+                <h2 class="italic text-3xl mb-2 text-white">Trip Planner</h2>
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
                     Guided by Nature,<br> Driven by Passion
                 </h1>
             </div>
         </div>
+        </div>
     </section>
-    <section class="bg-[#fdfaf4] flex justify-center items-center py-12 px-4">
-        <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section class="bg-[#fdfaf4] py-12 relative w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-            <!-- Left Image -->
-            <div class="relative">
-                <img src="img/33049bf198df21bb96f13c89439f6893d3c719c8.png" alt="Swimming Pool Safari Lodge"
-                    class="rounded-2xl shadow-lg w-full h-auto object-cover">
-            </div>
 
-            <!-- Right Content -->
-            <div>
-                <h2 class="text-3xl text-[var(--grey)]  italic mb-2">NYATI</h2>
-                <h1 class="text-4xl md:text-4xl text-[var(--green)]  font-bold mb-4  leading-snug">
-                    Swimming Pool Safari Lodge
-                </h1>
-
-                <div class="space-y-2 text-gray-700 mb-6 ">
-                    <div class="flex items-center gap-2">
-                        <img src="img/hathi.png" alt="" class="h-[15px] w-[15px]"> NYATI Safari Lodge offer a swimming
-                        pool for all guests.
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="img/hathi.png" alt="" class="h-[15px] w-[15px]"> Enjoy a dip in our spacious pool
-                        after an excellent Game Drive. The pool is open for all guests daily from 09:00 – 22:00
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="img/hathi.png" alt="" class="h-[15px] w-[15px]"> The swimming pool is heated when
-                        cold, in order to be enjoyed year round.
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="img/hathi.png" alt="" class="h-[15px] w-[15px]"> Are you staying at Olifant Villa
-                        Suites or at Cheetah Camp you will have your own private pool, available exclusively to you.
-                        Both pools are heated when cold just like the pool close to the main lodge.
-                    </div>
+            <aside class="lg:col-span-1">
+                <div class="bg-[#8b6a3b] text-white  space-y-3 sticky top-20 w-full">
+                    <button class="block w-full text-left font-medium bt1 py-1 px-2">Southern Africa</button>
+                    <button class="block w-full text-left font-medium bt1 py-1 px-2">Kruger National Park</button>
+                    <button class="block w-full text-left font-medium  py-1 px-2">NYATI "Big 5" & wildlife</button>
 
                 </div>
+            </aside>
 
-                <!-- Icons Section -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="img/Group 1597884089.png" alt="Package" class="w-10 h-10 mb-2">
-                        <span class="text-sm font-medium">Package Deals</span>
+
+            <div class="lg:col-span-3 space-y-16">
+
+                <div>
+                    <h2 class="text-sm uppercase text-[var(--grey)] tracking-wide">Top Places</h2>
+                    <h1 class="text-4xl font-semibold text-[var(--green)] mt-1">Southern Africa</h1>
+                    <p class="mt-4 text-gray-600 max-w-2xl">
+                        There are many good reasons for travelling to southern Africa. We have gathered the top 10
+                        reasons in our point of view for choosing to go an a safari adventure in southern Africa.
+                    </p>
+                </div>
+
+
+                <div>
+                    <h1 class="text-2xl font-semibold text-[var(--green)] mb-3">Africa's Wild Animals In Their Natural
+                        Environment</h1>
+                    <div class="flex justify-text   ">
+                        <p class="text-[#5A5D59] mb-6">
+                            If you are lucky you will get to see ”The Big 5”, which is the popular term for Lion,
+                            Leopard,
+                            Elephant, Buffalo and Rhinoceros. Go on a safari in Kruger National Park, which is the
+                            biggest
+                            national park in the southern Africa. It is well over 21.000 square kilometers, with the
+                            highest
+                            concentration of wildlife, including 13.000 elephants, 1.500 lions, 5.000 rhinos, 5.000
+                            giraffes
+                            and 86.000 impalas.
+                        </p>
+                        <p class="text-[#5A5D59]">Top off your safari with a few days of relaxation on some of the most
+                            beautiful beaches of
+                            the World. Mozambique and Mauritius offer the ultimate bounty beaches with crystal clear
+                            water, colorful fish and beautiful coral formations, which give the best conditions for
+                            snorkeling and diving.</p>
                     </div>
-                    <div class="flex flex-col items-center text-center">
-                        <img src="img/Group 1597884089 (1).png" alt="Safe" class="w-10 h-10 mb-2">
-                        <span class="text-sm font-medium">Safe Traveling</span>
-                    </div>
-                    <div class="flex flex-col items-center text-center">
-                        <img src="img/Group 1597884089 (3).png" alt="Affordable" class="w-10 h-10 mb-2">
-                        <span class="text-sm font-medium">Affordable Price</span>
-                    </div>
-                    <div class="flex flex-col items-center text-center">
-                        <img src="img/Group 1597884089 (2).png" alt="Cheetah" class="w-10 h-10 mb-2">
-                        <span class="text-sm font-medium">Cheetah Camp</span>
+
+                    <div class="grid grid-cols-1 w-full lg:grid-cols-3  gap-4">
+
+
+                        <img src="img/image317.png" alt="Cheetah" class="w-full h-[500px] object-cover lg:col-span-2">
+
+
+                        <div class="flex flex-col gap-4 w-[200px]">
+                            <img src="img/h1.png" alt="Elephants" class=" w-full h-[118px]  object-cover">
+                            <img src="img/h2.png" alt="Safari" class=" w-full h-[118px] object-cover">
+                            <img src="img/h3.png" alt="Hippo" class=" w-full h-[118px] object-cover">
+
+                        </div>
                     </div>
                 </div>
+
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+                    <div>
+                        <h1 class="text-3xl font-semibold text-[var(--green)] mb-4">
+                            Africa's Magnificent Nature
+                        </h1>
+                        <p class="text-gray-600 mb-4">
+                            Prepare to experience some of the biggest natural wonders of the World,
+                            ranging from rugged mountains, deep canyons, massive rivers, waterfalls
+                            and flat savannahs to dense bush, sand dunes, lush forests, breathtaking
+                            coastlines and tropical beaches.
+                        </p>
+                        <p class="text-gray-600">
+                            Shop till you drop in the colorful local markets, where you find
+                            handcrafts, leather goods, carved masks, clothes and local souvenirs.
+                            Pamper yourself in the big cities’ well assorted shopping malls – not
+                            least in Cape Town, where you can revel in 400 stores offering among other
+                            things gold and diamonds at good prices.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <img src="img/image321.png" alt="Nature" class=" w-full h-[320px] object-cover">
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h1 class="text-3xl font-semibold text-[var(--green)] mb-3">Africa's Colorful Culture</h1>
+                    <p class="text-[#5A5D59] mb-6 font-medium">
+                        Visit the Cape Peninsula with the legendary Cape of Good Hope, the second most southern point of
+                        Africa.
+                    </p>
+                    <p class="font-medium text-[#5A5D59] mb-2">Marvel at Victoria Falls, one of the Seven Wonders of the
+                        World which is claimed to be the
+                        largest waterfall in the world with a width of 1,708 metres (5,604 ft) and height of 108 metres
+                        (354ft), forming the largest sheet of falling water in the world. It was discovered by Dr.
+                        Livingstone in 1855 and is today considered to be one of the worlds most beautiful and most
+                        spectacular waterfalls.</p>
+
+
+                    <img src="img/image322.png" alt="Culture Dance" class=" w-full h-[320px] object-cover">
+                </div>
+
+
+                <div>
+                    <h1 class="text-3xl font-semibold text-[var(--green)] mb-3">Africa Without Hassle</h1>
+                    <p class="font-medium text-[#5A5D59]   mb-6">
+                        Enjoy the view into one of the largest canyons on Earth, Blyde River Canyon, possibly the
+                        largest “green canyon” due to its lush subtropical foliage, known to be one of the great wonders
+                        of nature on the African continent. This canyon is part of the Panorama route in the in dramatic
+                        Drakensberg mountains, which is the highest mountain range in Southern Africa, rising to 3,482
+                        metres (11,424 ft) in height.
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+                        <img src="img/image323.png" alt="Dining in Nature"
+                            class=" w-full h-[500px] object-cover lg:col-span-2">
+
+
+                        <div class="flex flex-col gap-2 w-[200px] max-md:justify-center ">
+                            <img src="img/image.png" alt="Outdoor Dining" class=" w-full h-[160px] object-cover">
+                            <img src="img/image323.png" alt="Safari Trip" class=" w-full h-[160px] object-cover">
+                            <img src="img/image324.png" alt="Group" class=" w-full h-[160px] object-cover">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -233,13 +312,13 @@
         <div class="blurwhite w-full">
     
         </div>
-      
+    
         <div class="absolute inset-0 bg-gradient-to-t from-[#5a4c2f]/90 via-[#5a4c2f]/60 to-transparent"></div>
     
         <div
           class="relative container mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 text-white flex flex-col justify-between min-h-screen">
     
-     
+    
           <div class="text-center mb-10 z-10">
             <h2 class="text-3xl sm:text-lg italic text-[#998254]">Get Exclusive Safari Deals & Tips!</h2>
             <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">Join Our Newsletter</h1>
@@ -387,8 +466,34 @@
     
         </div>
       </footer>
+      <a href="https://wa.me/6356366560?text=Hello%20Nyati%20Safari%20Lodge!" target="_blank">
+    
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 258" class="whatsaap">
+        <defs>
+          <linearGradient id="SVGBRLHCcSy" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#1faf38" />
+            <stop offset="100%" stop-color="#60d669" />
+          </linearGradient>
+          <linearGradient id="SVGHW6lecxh" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#f9f9f9" />
+            <stop offset="100%" stop-color="#fff" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#SVGBRLHCcSy)"
+          d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004" />
+        <path fill="url(#SVGHW6lecxh)"
+          d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z" />
+        <path fill="#fff"
+          d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64" />
+      </svg>
+    
+    </a>
+    
 
-      
+
+
+
 </body>
 
 </html>

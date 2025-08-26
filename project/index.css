@@ -37,7 +37,9 @@ h1{
 a{
   font-family: var(--font-subheading);
 }
-
+.bt1{
+  border-bottom: 1px solid rgba(41, 41, 43, 0.3);
+}
 .whatsaap{
   position: fixed;
   bottom: 25px;
@@ -404,6 +406,7 @@ footer{
   background-image: url(img/60fe7f61661cb0fdf8e747c366d60e48644acf28.png);
   background-size: cover;
   background-position-y: 120px;
+  height: auto;
 }
 
 /* about css */
@@ -454,6 +457,19 @@ width: 100%;
   border-bottom: 1px solid rgba(41, 41, 43, 0.2);;
   width: 100%;
 }
+
+/* trip css */
+.trip{
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  url(img/cat.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 850px;
+width: 100%;
+}
+
 @media (max-width:1312px) {
   .b2 {
     display: none;
