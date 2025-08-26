@@ -20,6 +20,29 @@
 </head>
 
 <body class="overflow-x-hidden">
+  <section id="loading-section" class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black z-500">
+    <div class="relative flex flex-col items-center">
+  
+      <!-- Animated Logo Circle -->
+      <div class="relative">
+        <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-teal-400 animate-spin-slow"></div>
+        <div class="absolute inset-2 rounded-full border-4 border-transparent border-r-purple-500 animate-spin-slower"></div>
+        <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-teal-400 via-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
+          <span class="text-2xl font-bold text-white">A</span>
+        </div>
+      </div>
+  
+      <!-- Progress bar -->
+      <div class="mt-8 w-40 h-2 bg-gray-700 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-teal-400 to-purple-500 w-0"></div>
+      </div>
+  
+      <!-- Loading Text -->
+      <p class="mt-4 text-sm tracking-[0.3em] text-gray-300 animate-pulse">LOADING CONTENT...</p>
+    </div>
+  </section>
+
+
   <section class="hero px-1 border w-[100%] flex items-center py-2   flex-col">
     <header class="h-[81px] px-4 max-sm:p-0 w-[90%]  sm:w-[100%] mx-auto z-100">
       <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
@@ -479,7 +502,7 @@
   </section>
   <section class="custom-section wave-bg grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <div class="flex justify-center max-md:w-full">
-      <div class="africa-shape"></div>
+      <div class="africa-shape"></div> 
     </div>
 
     <!-- Right Content -->
@@ -1231,6 +1254,23 @@
 </body>
 
 </html>
+
+<script>
+
+  // Fake progress for demo
+  let progress = 0;
+  const bar = document.getElementById("progress-bar");
+  const loader = document.getElementById("loading-section");
+  const interval = setInterval(() => {
+    progress += 5;
+    bar.style.width = progress + "%";
+    if(progress >= 100){
+      clearInterval(interval);
+      loader.classList.add("opacity-0","transition-opacity","duration-700");
+      setTimeout(()=> loader.style.display = "none",700);
+    }
+  }, 200);
+</script>
 <script>
   const menuBtn = document.getElementById('menu-btn');
   const closeBtn = document.getElementById('close-menu');

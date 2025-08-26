@@ -470,6 +470,23 @@ height: 850px;
 width: 100%;
 }
 
+
+/* load page animation */
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes spin-slower {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+.animate-spin-slower {
+  animation: spin-slower 8s linear infinite;
+}
 @media (max-width:1312px) {
   .b2 {
     display: none;
@@ -641,6 +658,9 @@ width: 100%;
   .sl {
     flex-direction: column;
 
+  }
+  .wave-bg{
+    display: none;
   }
 
     .tour-position-right {
