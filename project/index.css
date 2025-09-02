@@ -463,6 +463,13 @@ width: 100%;
   width: 100%;
 }
 
+ .aside:hover{
+  background-color: var(--bgcream);
+  transition: 2s;
+  .text-grey{
+    color: var(--grey);
+  }
+ }
 /* trip css */
 .trip{
   background: 
@@ -475,8 +482,86 @@ height: 850px;
 width: 100%;
 }
 
+/* gallery */
 
 
+:root {
+  --green: #849368;
+  --bgcream: #FFFbee;
+  --white:#fff;
+  --grey:#998254;
+  --font-heading: "Black Vosten", cursive;
+  --font-subheading: "Host Grotesk", sans-serif;
+}
+
+.gallery-section {
+  background: var(--bgcream);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--grey);
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  text-align: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+}
 
 
 @media (max-width:1312px) {
@@ -669,11 +754,22 @@ width: 100%;
   .safari {
     background: 
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-      url(img/safari.png);
+      url(img/2.png);
     background-size: cover;     
-    background-position:center,start; 
+    background-position:center;
+     
     background-repeat: no-repeat;
     width: 100%;
+  }
+  .trip{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(img/image317.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: center,start;
+  height: 850px;
+  width: 100%;
   }
   
 

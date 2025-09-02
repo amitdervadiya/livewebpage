@@ -16,8 +16,8 @@
 
 <body>
   <section class="safari px-1  w-[100%] flex items-center py-2 flex-col h-full">
-    <header class="h-[81px] px-4  w-[90%] max-sm:p-0 sm:w-[100%] mx-auto z-100">
-      <div class="nav flex items-center  justify-around max-md:justify-between  w-full px-4">
+    <header class="h-[81px] px-4 max-sm:p-0 w-[90%]  sm:w-[100%] mx-auto z-100">
+      <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
 
         <div class="flex items-center gap-5">
           <div class="logo">
@@ -28,7 +28,7 @@
             <a href="index.html">
               <li class="nav-link ">home</li>
             </a>
-            <a href="">
+            <a href="About.html" target="">
               <li class="nav-link">about
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
                   <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
@@ -36,14 +36,7 @@
                 </svg>
               </li>
             </a>
-            <a href="">
-              <li class="nav-link">accommodation
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
-                  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
-                    d="M36 18L24 30L12 18" />
-                </svg>
-              </li>
-            </a>
+         
             <a href="Facality.html">
               <li class="nav-link">facilities</li>
             </a>
@@ -64,8 +57,9 @@
           </ul>
         </div>
 
-        <div class="hidden md:flex  gap-5  ">
-          <button class="b1 md:hidden ">
+        <div class="hidden md:flex gap-5">
+        <button class="b1 md:hidden z-20 "> 
+          <a href="tel:+916351676060" class="flex gap-2 justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path stroke-dasharray="64" stroke-dashoffset="64"
@@ -87,13 +81,14 @@
                 </path>
               </g>
             </svg>
-            +27 15 590 8328
+            +91 6351676060
+          </a>
           </button>
           <button class="b2 ">plan your safari</button>
         </div>
 
 
-        <button class="md:hidden " id="menu-btn">
+        <button class="md:hidden z-20" id="menu-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
             <g fill="none">
               <path fill="#fff"
@@ -115,37 +110,39 @@
         </button>
         <a href="index.html" class="hover:text-gray-300 transition">Home</a>
         <a href="About.html" class="hover:text-gray-300 transition">About</a>
-        <a href="#" class="hover:text-gray-300 transition">Accommodation</a>
         <a href="Facality.html" class="hover:text-gray-300 transition">Facilities</a>
         <a href="Safari&tours.html" class="hover:text-gray-300 transition">Safaris & Tours</a>
         <a href="#" class="hover:text-gray-300 transition">Gallery</a>
         <a href="trip.html" class="hover:text-gray-300 transition">Trip Planner</a>
-        <div class="flex flex-col gap-3 mt-4">
-          <button
-            class="h-[50px] w-[190px] flex justify-center items-center gap-2 border border-white text-white rounded hover:bg-white hover:text-black transition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-              <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path stroke-dasharray="64" stroke-dashoffset="64"
-                  d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
-                  <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
-                  <animateTransform id="SVG3Jm2WHSS" fill="freeze" attributeName="transform"
-                    begin="0.6s;SVG3Jm2WHSS.begin+2.7s" dur="0.5s" type="rotate"
-                    values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12" />
-                </path>
-                <path stroke-dasharray="4" stroke-dashoffset="4"
-                  d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72">
-                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0s" dur="2.7s"
-                    keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4" />
-                </path>
-                <path stroke-dasharray="6" stroke-dashoffset="6"
-                  d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65">
-                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0.2s" dur="2.7s"
-                    keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6" />
-                </path>
-              </g>
-            </svg>
-            +27 15 590 8328
-          </button>
+        <div class="flex flex-col gap-3 mt-4 max-sm:items-center">
+          <a href="tel:+916351676060">
+            <button
+              class="h-[50px] w-max px-3 flex justify-center items-center gap-2 border border-white text-white rounded hover:bg-white hover:text-black transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path stroke-dasharray="64" stroke-dashoffset="64"
+                    d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                    <animateTransform id="SVG3Jm2WHSS" fill="freeze" attributeName="transform"
+                      begin="0.6s;SVG3Jm2WHSS.begin+2.7s" dur="0.5s" type="rotate"
+                      values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12" />
+                  </path>
+                  <path stroke-dasharray="4" stroke-dashoffset="4"
+                    d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0s" dur="2.7s"
+                      keyTimes="0;0.111;0.259;0.37;1" values="4;0;0;4;4" />
+                  </path>
+                  <path stroke-dasharray="6" stroke-dashoffset="6"
+                    d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="SVG3Jm2WHSS.begin+0.2s" dur="2.7s"
+                      keyTimes="0;0.074;0.185;0.333;0.444;1" values="6;6;0;0;6;6" />
+                  </path>
+                </g>
+              </svg>
+              +91 63516 76060
+            </button>
+          </a>
+          
           <button class="h-[50px] w-[190px] bg-[#849368] text-white rounded hover:bg-gray-200 transition">
             Plan Your Safari
           </button>
@@ -340,13 +337,13 @@
     <aside>
       <div class="bg-[var(--grey)] shadow py-2 ">
 
-        <div class="h-full w-full">
+        <div class="h-full w-full ">
 
-          <div class="px-2 py-1.5  items-center flex gap-2  aside">
+          <div class="px-2 py-1.5  items-center flex gap-2  aside ">
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/Vector 11.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">"Big 5" game drive inclusive in rate</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">"Big 5" game drive inclusive in rate</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -355,7 +352,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/Vector 8.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">River safari with bushwalk & game drive</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">River safari with bushwalk & game drive</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -364,7 +361,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/v2.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Hoedspruit Endangered Species Centre</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Hoedspruit Endangered Species Centre</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -373,7 +370,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/v3.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Hot Air Balloon</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Hot Air Balloon</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -382,7 +379,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/v1.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Jessica the tame hippo</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Jessica the tame hippo</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -391,7 +388,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/v4.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Kruger National Park - full day</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Kruger National Park - full day</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -400,7 +397,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/v5.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Bushwalk & Bushbreakfast</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Bushwalk & Bushbreakfast</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -409,7 +406,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--grey)] rounded-full flex justify-center items-center">
               <img src="img/v12.png" alt="">
             </div>
-            <h3 class="text-[var(--grey)] font-medium">Nyati Safari On Foot</h3>
+            <h3 class="text-[var(--grey)] font-medium text-grey">Nyati Safari On Foot</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -418,7 +415,7 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/v7.png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Panorama Tour - The Drakensberg Mountains</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Panorama Tour - The Drakensberg Mountains</h3>
           </div>
         </div>
         <div class="h-full w-full">
@@ -427,16 +424,16 @@
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/Vector (8).png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Quad bike safari</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Quad bike safari</h3>
           </div>
         </div>
         <div class="h-full w-full">
 
-          <div class="px-2 py-1.5  items-center flex gap-2 ">
+          <div class="px-2 py-1.5  items-center flex gap-2 aside">
             <div class="h-[50px] w-[50px] bg-[var(--bgcream)] rounded-full flex justify-center items-center">
               <img src="img/Vector (9).png" alt="">
             </div>
-            <h3 class="text-[var(--bgcream)] font-medium">Visit to African village</h3>
+            <h3 class="text-[var(--bgcream)] font-medium text-grey">Visit to African village</h3>
           </div>
         </div>
 
