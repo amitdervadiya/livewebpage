@@ -19,11 +19,10 @@
 .blurwhite {
   height: 350px;
   background-color: white;
-  filter: blur(30px);
+  filter: blur(20px);
   position: absolute;
   top: -20px;
-  left: -50px;   /* push left */
-  right: -50px;  /* push right */
+
   width: calc(100% + 100px); /* extra width */
   z-index: 1;
 }
@@ -664,6 +663,16 @@ width: 100%;
   }
   footer{
     height: max-content;
+  }
+  .blurwhite {
+    height: 350px;
+    background-color: white;
+    filter: blur(20px);
+    position: absolute;
+    top: -20px;
+  
+    width: calc(100% + 10px); /* extra width */
+    z-index: 1;
   }
 
 
