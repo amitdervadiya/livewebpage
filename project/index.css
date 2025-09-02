@@ -22,10 +22,12 @@
   filter: blur(20px);
   position: absolute;
   top: -20px;
-
-  width: calc(100% + 100px); /* extra width */
+  left: -20px;   /* expand outwards */
+  right: -20px;
   z-index: 1;
 }
+
+
 
 
 h2{
@@ -664,16 +666,15 @@ width: 100%;
   footer{
     height: max-content;
   }
-  .blurwhite {
-    height: 350px;
-    background-color: white;
-    filter: blur(20px);
-    position: absolute;
-    top: -20px;
-  
-    width: calc(100% + 10px); /* extra width */
-    z-index: 1;
+  .safari {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+      url(img/safari.png);
+    background-size: cover;     
+    background-position:center,start; 
+    background-repeat: no-repeat;
+    width: 100%;
   }
-
+  
 
 }
