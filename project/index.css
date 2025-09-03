@@ -29,7 +29,9 @@
 }
 
 
-
+button{
+  cursor: pointer;
+}
 
 h2{
   font-family:Black Vosten;
