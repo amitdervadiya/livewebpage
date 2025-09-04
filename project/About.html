@@ -12,12 +12,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anek+Latin&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
   <section class="about px-1 border w-[100%] flex items-center py-2 flex-col">
-    <header class="h-[81px] px-4 max-sm:p-0 w-[90%]  sm:w-[100%] mx-auto z-100">
-      <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
+    <header class="h-[81px] px-4 max-sm:p-0 w-[100%]  sm:w-[100%] mx-auto z-100">
+      <div class="nav flex items-center justify-between  max-md:justify-between  w-full px-2">
 
         <div class="flex items-center gap-5">
           <div class="logo">
@@ -48,9 +49,7 @@
                 </svg>
               </li>
             </a>
-            <a href="">
-              <li class="nav-link">gallery</li>
-            </a>
+          
             <a href="trip.html">
               <li class="nav-link">trip planner</li>
             </a>
@@ -112,7 +111,7 @@
         <a href="About.html" class="hover:text-gray-300 transition">About</a>
         <a href="facility.html" class="hover:text-gray-300 transition">Facilities</a>
         <a href="Safari&tours.html" class="hover:text-gray-300 transition">Safaris & Tours</a>
-        <a href="#" class="hover:text-gray-300 transition">Gallery</a>
+        <a href="gallery.html" class="hover:text-gray-300 transition">Gallery</a>
         <a href="trip.html" class="hover:text-gray-300 transition">Trip Planner</a>
         <div class="flex flex-col gap-3 mt-4 max-sm:items-center">
           <a href="tel:+916351676060">
@@ -616,18 +615,59 @@
       class="relative container mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 text-white flex flex-col justify-between min-h-screen">
 
 
-      <div class="text-center mb-10 z-10 " id="contact">
-        <h2 class="text-3xl sm:text-lg italic text-[#998254]">Get Exclusive Safari Deals & Tips!</h2>
-        <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">Join Our Newsletter</h1>
-        <form class=" sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
-          <input type="email" placeholder="Email" class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
 
-          <button type="submit"
-            class="bg-[var(--green)] text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
+      <div class="text-center mb-10 z-10" id="contact">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-lg italic text-[#998254]">
+          Get Exclusive Safari Deals & Tips!
+        </h2>
+        <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">
+          Join Our Newsletter
+        </h1>
+
+        <!-- Newsletter Form -->
+        <form onsubmit="sendEmail(event)" class="sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
+
+          <!-- Email Input -->
+          <input type="email" name="user_email" placeholder="Email" required
+            class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
+
+          <!-- Subscribe Button -->
+          <button type="submit" class="bg-[var(--green)] hover:bg-green-700 transition-all duration-300 
+                   text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
             SUBSCRIBE NOW
           </button>
         </form>
+
+        <!-- Success Message (hidden by default) -->
+        <p id="successMsg" class="hidden text-green-600 mt-4 text-lg font-medium">
+          🎉 Thank you for subscribing!
+        </p>
       </div>
+
+
+
+      <script>
+        (function () {
+          emailjs.init("zmpiKf0hhhQ5NenbE");
+        })();
+
+        function sendEmail(event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_wig8yrd", "template_oxd29zo", event.target)
+            .then(() => {
+              document.getElementById("successMsg").classList.remove("hidden");
+              event.target.reset();
+            })
+            .catch((error) => {
+              console.error("❌ EmailJS Error:", error);
+              alert("❌ Failed, please try again.");
+            });
+        }
+      </script>
+
+
 
 
       <h1 class="text-5xl sm:text-7xl md:text-[100px] lg:text-[150px] italic font-bold text-center leading-tight mb-12">
@@ -783,50 +823,6 @@
 </body>
 
 </html>
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const closeBtn = document.getElementById('close-menu');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-    mobileMenu.classList.add('opacity-100');
-  });
 
-  closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
-    mobileMenu.classList.remove('opacity-100');
-  });
-</script>
-
-<script>
-  const teamSlider = document.getElementById('team-slider');
-  const prevBtnTeam = document.getElementById('team-prev');
-  const nextBtnTeam = document.getElementById('team-next');
-
-  function stepSizeTeam() {
-    const card = teamSlider.querySelector('[data-card]');
-    if (!card) return 320;
-    const gap = parseInt(getComputedStyle(teamSlider).gap || 0, 10);
-    return Math.round(card.getBoundingClientRect().width + gap);
-  }
-
-  function updateArrowsTeam() {
-    const maxLeft = teamSlider.scrollWidth - teamSlider.clientWidth - 1;
-    prevBtnTeam.disabled = teamSlider.scrollLeft <= 0;
-    nextBtnTeam.disabled = teamSlider.scrollLeft >= maxLeft;
-  }
-
-  nextBtnTeam.addEventListener('click', () => {
-    teamSlider.scrollBy({ left: stepSizeTeam(), behavior: 'smooth' });
-  });
-
-  prevBtnTeam.addEventListener('click', () => {
-    teamSlider.scrollBy({ left: -stepSizeTeam(), behavior: 'smooth' });
-  });
-
-  teamSlider.addEventListener('scroll', updateArrowsTeam);
-  window.addEventListener('resize', updateArrowsTeam);
-
-  document.addEventListener('DOMContentLoaded', () => setTimeout(updateArrowsTeam, 0));
-</script>
+<script src="script.js"></script>

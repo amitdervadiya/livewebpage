@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nayari lodge</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,38 +20,45 @@
     rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
 
 </head>
 
 <body class="overflow-X-hidden">
-  <section id="loading-section"
+<!-- Loader Section -->
+<section id="loading-section"
   class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black z-500">
   <div class="relative flex flex-col items-center">
 
-   
+    <!-- Logo Wrapper -->
     <div class="relative" id="logo-wrapper">
       <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-teal-400"></div>
       <div class="absolute inset-2 rounded-full border-4 border-transparent border-r-purple-500"></div>
       <div
-        class="w-28 h-28 rounded-full bg-gradient-to-tr from-teal-400 via-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
+        class="w-28 h-28 rounded-full bg-gradient-to-tr from-teal-400 via-blue-500 to-purple-500 flex items-center justify-center shadow-lg logo-main">
         <span class="text-2xl font-bold text-white">Nayati</span>
       </div>
     </div>
 
- 
+    <!-- Progress Bar -->
     <div class="mt-8 w-40 h-2 bg-gray-700 rounded-full overflow-hidden">
       <div id="progress-bar" class="h-full bg-gradient-to-r from-teal-400 to-purple-500 w-0"></div>
     </div>
 
-   
+    <!-- Loading Text -->
     <p id="loading-text" class="mt-4 text-sm tracking-[0.3em] text-gray-300">LOADING CONTENT...</p>
   </div>
 </section>
 
 
+
+
+
+
   <section class="hero px-1 border w-[100%] flex items-center py-2   flex-col">
-    <header class="h-[81px] px-4 max-sm:p-0 w-[90%]  sm:w-[100%] mx-auto z-100">
-      <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
+    <header class="h-[81px] px-4 max-sm:p-0 w-[100%]  sm:w-[100%] mx-auto z-100">
+      <div class="nav flex items-center justify-between  max-md:justify-between  w-full px-2">
 
         <div class="flex items-center gap-5">
           <div class="logo">
@@ -81,9 +89,7 @@
                 </svg>
               </li>
             </a>
-            <a href="gallery.html">
-              <li class="nav-link">gallery</li>
-            </a>
+          
             <a href="trip.html">
               <li class="nav-link">trip planner</li>
             </a>
@@ -435,7 +441,7 @@
       <h2 class="subtitle">Explore</h2>
       <h1 class="title">Our Facilities</h1>
 
-      <div class="facilities-grid">
+   <a href="Facility.html">  <div class="facilities-grid">
         <div class="facility-card">
           <div class="icon-box">
             <img src="img/Vector 8.png" alt="">
@@ -494,8 +500,9 @@
       </div>
 
       <div class="button-wrap">
-        <button class="explore-btn">EXPLORE MORE</button>
+      <a href="Facility.html"> <button class="explore-btn">EXPLORE MORE</button></a> 
       </div>
+    </a> 
     </section>
   </section>
 
@@ -539,9 +546,10 @@
             <br> and other beverages. The lodge came to life back in <br>1998 and is 100% Danish owned.
           </p>
 
-          <button class="bg-[#6b7a4b] h-[50px] uni-button text-white universal rounded hover:bg-[#4d5535] transition">
+       <a href="#plan">  <button class="bg-[#6b7a4b] h-[50px] uni-button text-white universal rounded hover:bg-[#4d5535] transition">
             START PLANNING YOUR SAFARI
           </button>
+        </a> 
         </div>
       </div>
     </div>
@@ -749,10 +757,11 @@
         </ul>
 
         <!-- Button with z-index -->
-        <button
+     <a href="#plan">  <button
           class="relative z-20 bg-[var(--green)] text-white px-6 py-3 rounded-md shadow-md hover:bg-green-800 transition">
           START PLANNING YOUR SAFARI
         </button>
+      </a> 
       </div>
 
       <!-- Right Images -->
@@ -893,7 +902,7 @@
   </section>
 
 
-  <section class="bg-contact flex flex-col  items-center  sm:px-6 md:px-10 py-10 relative">
+  <section class="bg-contact flex flex-col  items-center  sm:px-6 md:px-10 py-10 relative " id="plan">
     <div class="blurwhite w-full">
 
     </div>
@@ -903,21 +912,49 @@
       <h2 class="text-2xl sm:text-3xl md:text-4xl text-[var(--grey)] ">Secure Your Spot for 2025</h2>
       <h1 class="text-3xl sm:text-4xl md:text-5xl text-[var(--green)] font-bold">Start Your Safari Inquiry</h1>
 
+      <form id="travel-form"
+        class="form-row w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+        <input type="text" name="name" placeholder="Name" required class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="email" name="user_email" placeholder="Email" required
+          class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="number" name="phone" placeholder="Phone No" required class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="date" name="travel_date" placeholder="Travel Date" required
+          class="indesign w-full sm:w-[48%] md:w-[23%] z-20">
 
-      <div class="form-row w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
-        <input type="text" placeholder="Name" class="indesign w-full sm:w-[48%] md:w-[23%]">
-        <input type="text" placeholder="Email" class="indesign w-full sm:w-[48%] md:w-[23%]">
-        <input type="number" placeholder="Phone No" class="indesign w-full sm:w-[48%] md:w-[23%]">
-        <input type="date" placeholder="Travel Date" class="indesign w-full sm:w-[48%] md:w-[23%] z-20">
-      </div>
+        <button type="submit" class="bg-[var(--green)] text-white font-semibold px-6 py-2 rounded-md mt-4 sm:mt-0">
+          SUBMIT
+        </button>
+      </form>
+
+      <script>
+        (function () {
+          emailjs.init("zmpiKf0hhhQ5NenbE");
+        })();
+
+        document.getElementById("travel-form").addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_wig8yrd", "template_5c3j30i", this)
+            .then(() => {
+              alert("✅ Form Submitted Successfully!");
+              this.reset();
+            })
+            .catch((error) => {
+              console.error("❌ EmailJS Error:", error);
+              alert("❌ Failed, please try again.");
+            });
+        });
+      </script>
+
+
 
 
       <div class="flex flex-col sm:flex-row gap-4 items-center">
-        <button
-          class="bg-[var(--green)] px-6 py-2 text-white rounded-md shadow-md z-10 hover:scale-105 transition">Start
-          Planning Your Safari</button>
+        <a href="#plan"> <button
+            class="bg-[var(--green)] px-6 py-2 text-white rounded-md shadow-md z-10 hover:scale-105 transition">Start
+            Planning Your Safari </button></a>
 
-        <button
+        <a href="tel=+91 6351676060"></a> <button
           class="flex px-6 py-2 justify-center items-center gap-2 border border-black text-black  z-10 rounded-md hover:bg-white hover:text-[var(--green)] transition">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -925,7 +962,7 @@
                 d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
             </g>
           </svg>
-          +27 15 590 8328
+          +91 6351676060
         </button>
       </div>
 
@@ -951,14 +988,15 @@
                 d="M10.75 16.75a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0-2.5 0M9.5 10.5a1.25 1.25 0 0 0 1.25-1.25a1.25 1.25 0 1 1 1.75 1.15a2.91 2.91 0 0 0-1.75 2.67v.56a1.25 1.25 0 1 0 2.5 0v-.56a.42.42 0 0 1 .25-.38a3.75 3.75 0 1 0-5.25-3.44A1.25 1.25 0 0 0 9.5 10.5" />
             </svg> TALK TO OUR SAFARI EXPERTS
           </button>
-          <button class="flex px-5 py-2 justify-center items-center gap-2 border border-white text-white">
+          <a href="tel=+91 6351676060"></a> <button
+            class="flex px-5 py-2 justify-center items-center gap-2 border border-white text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path
                   d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
               </g>
             </svg>
-            +27 15 590 8328
+            +91 6351676060
           </button>
         </div>
       </div>
@@ -1084,18 +1122,59 @@
       class="relative container mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 text-white flex flex-col justify-between min-h-screen">
 
 
-      <div class="text-center mb-10 z-10 " id="contact">
-        <h2 class="text-3xl sm:text-lg italic text-[#998254]">Get Exclusive Safari Deals & Tips!</h2>
-        <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">Join Our Newsletter</h1>
-        <form class=" sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
-          <input type="email" placeholder="Email" class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
 
-          <button type="submit"
-            class="bg-[var(--green)] text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
+      <div class="text-center mb-10 z-10" id="contact">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-lg italic text-[#998254]">
+          Get Exclusive Safari Deals & Tips!
+        </h2>
+        <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">
+          Join Our Newsletter
+        </h1>
+
+        <!-- Newsletter Form -->
+        <form onsubmit="sendEmail(event)" class="sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
+
+          <!-- Email Input -->
+          <input type="email" name="user_email" placeholder="Email" required
+            class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
+
+          <!-- Subscribe Button -->
+          <button type="submit" class="bg-[var(--green)] hover:bg-green-700 transition-all duration-300 
+                   text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
             SUBSCRIBE NOW
           </button>
         </form>
+
+        <!-- Success Message (hidden by default) -->
+        <p id="successMsg" class="hidden text-green-600 mt-4 text-lg font-medium">
+          🎉 Thank you for subscribing!
+        </p>
       </div>
+
+
+
+      <script>
+        (function () {
+          emailjs.init("zmpiKf0hhhQ5NenbE");
+        })();
+
+        function sendEmail(event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_wig8yrd", "template_oxd29zo", event.target)
+            .then(() => {
+              document.getElementById("successMsg").classList.remove("hidden");
+              event.target.reset();
+            })
+            .catch((error) => {
+              console.error("❌ EmailJS Error:", error);
+              alert("❌ Failed, please try again.");
+            });
+        }
+      </script>
+
+
 
 
       <h1 class="text-5xl sm:text-7xl md:text-[100px] lg:text-[150px] italic font-bold text-center leading-tight mb-12">
@@ -1245,350 +1324,4 @@
 </body>
 
 </html>
-
-<script>
-  // Loader timeline
-  const loaderTl = gsap.timeline({ defaults: { ease: "power2.out" } });
-
-  loaderTl
-    .from("#logo-wrapper div", {
-      scale: 0,
-      rotate: 180,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2
-    })
-    .to("#progress-bar", {
-      width: "100%",
-      duration: 2
-    })
-    .to("#loading-text", {
-      opacity: 0.3,
-      duration: 0.6,
-      yoyo: true,
-      repeat: 3
-    })
-    .to("#loading-section", {
-      opacity: 0,
-      duration: 1,
-      delay: 0.5,
-      onComplete: () => {
-        document.getElementById("loading-section").style.display = "none";
-        playHeroAnimation(); // 👈 run hero animation when loader finishes
-      }
-    });
-
- 
-</script>
-
-
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const closeBtn = document.getElementById('close-menu');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-    mobileMenu.classList.add('opacity-100');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
-    mobileMenu.classList.remove('opacity-100');
-  });
-</script>
-<script>
-  const slider = document.getElementById('lodges-slider');
-  const prevBtn = document.getElementById('lodges-prev');
-  const nextBtn = document.getElementById('lodges-next');
-
-  // Scroll by exactly one card (width + gap)
-  function stepSize() {
-    const card = slider.querySelector('[data-card]');
-    if (!card) return 320;
-    const gap = parseInt(getComputedStyle(slider).gap || 0, 10);
-    return Math.round(card.getBoundingClientRect().width + gap);
-  }
-
-  function updateArrows() {
-    const maxLeft = slider.scrollWidth - slider.clientWidth - 1;
-    prevBtn.disabled = slider.scrollLeft <= 0;
-    nextBtn.disabled = slider.scrollLeft >= maxLeft;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    slider.scrollBy({ left: stepSize(), behavior: 'smooth' });
-  });
-
-  prevBtn.addEventListener('click', () => {
-    slider.scrollBy({ left: -stepSize(), behavior: 'smooth' });
-  });
-
-  slider.addEventListener('scroll', updateArrows);
-  window.addEventListener('resize', updateArrows);
-  // init
-  document.addEventListener('DOMContentLoaded', () => setTimeout(updateArrows, 0));
-</script>
-<script>
-  const slider1 = document.getElementById("slider");
-  const next = document.getElementById("next");
-  const prev = document.getElementById("prev");
-
-  let currentIndex = 0;
-  const totalSlides = slider1.children.length;
-
-  // Function to detect visible slides based on screen size
-  function getVisibleSlides() {
-    if (window.innerWidth < 640) return 1; // mobile
-    if (window.innerWidth < 1024) return 2; // tablet
-    return 3; // desktop
-  }
-
-  function updateSlider() {
-    const visibleSlides = getVisibleSlides();
-    slider1.style.transform = `translateX(-${(100 / visibleSlides) * currentIndex}%)`;
-  }
-
-  next.addEventListener("click", () => {
-    const visibleSlides = getVisibleSlides();
-    if (currentIndex < totalSlides - visibleSlides) {
-      currentIndex++;
-      updateSlider();
-    }
-  });
-
-  prev.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  });
-
-  window.addEventListener("resize", updateSlider);
-</script>
-
-<script>
-  (() => {
-    // Scope everything to this widget to avoid conflicts with other sliders
-    const widget = document.getElementById('tours-widget');
-    const viewport = widget.querySelector('#tours-viewport');   // scroll container
-    const track = widget.querySelector('#tours-track');         // flex track
-    const btnPrev = widget.querySelector('#tours-prev');
-    const btnNext = widget.querySelector('#tours-next');
-    const dots = widget.querySelectorAll('.tours-dot');
-
-    // Calculate one step = card width + gap
-    function getStep() {
-      const card = track.querySelector('[data-card]');
-      if (!card) return 320;
-      const cardRect = card.getBoundingClientRect();
-      const gap = parseInt(getComputedStyle(track).gap || 0, 9);
-      return Math.round(cardRect.width + gap);
-    }
-
-    // How many are visible right now?
-    function getVisibleCount() {
-      return Math.max(1, Math.floor(viewport.clientWidth / getStep()));
-    }
-
-    function getActiveIndex() {
-      return Math.round(viewport.scrollLeft / getStep());
-    }
-
-    function setActiveDot() {
-      const idx = Math.min(getActiveIndex(), dots.length - 1);
-      dots.forEach((d, i) => d.style.opacity = i === idx ? '1' : '0.5');
-    }
-
-    function toggleArrows() {
-      const maxLeft = viewport.scrollWidth - viewport.clientWidth - 1;
-      btnPrev.disabled = viewport.scrollLeft <= 0;
-      btnNext.disabled = viewport.scrollLeft >= maxLeft;
-    }
-
-    function goBy(step) {
-      viewport.scrollBy({ left: step * getStep(), behavior: 'smooth' });
-    }
-
-    // Events
-    btnNext.addEventListener('click', () => goBy(1));
-    btnPrev.addEventListener('click', () => goBy(-1));
-
-    viewport.addEventListener('scroll', () => {
-      toggleArrows();
-      setActiveDot();
-    });
-
-    window.addEventListener('resize', () => {
-      // Keep alignment on resize
-      viewport.scrollTo({ left: getActiveIndex() * getStep(), behavior: 'instant' });
-      toggleArrows();
-      setActiveDot();
-    });
-
-    // Dots click -> jump
-    dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => {
-        const maxIdx = Math.max(0, track.querySelectorAll('[data-card]').length - getVisibleCount());
-        const target = Math.min(i, maxIdx);
-        viewport.scrollTo({ left: target * getStep(), behavior: 'smooth' });
-      });
-    });
-
-    // Init
-    setTimeout(() => {
-      toggleArrows();
-      setActiveDot();
-    }, 0);
-  })();
-</script>
-
-<script>
-
-  document.querySelectorAll(".accordion-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const content = button.nextElementSibling;
-      const isOpen = !content.classList.contains("hidden");
-
-      // Close all others
-      document.querySelectorAll(".accordion-content").forEach(c => c.classList.add("hidden"));
-      document.querySelectorAll(".accordion-btn span").forEach(s => s.textContent = "+");
-
-      // Toggle this one
-      if (!isOpen) {
-        content.classList.remove("hidden");
-        button.querySelector("span").textContent = "−";
-      }
-    });
-  });
-
-
-</script>
-
-<!-- GSAP Animation -->
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  const facilityTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".facilities-wrapper",
-      start: "top 80%", // animation starts when section is 80% visible
-    }
-  });
-
-  facilityTl
-    .from(".subtitle", { y: 30, opacity: 0, duration: 0.8 })
-    .from(".title", { y: 40, opacity: 0, duration: 0.8 }, "-=0.5")
-    .from(".facility-card", {
-      scale: 0.8,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.2,
-      ease: "back.out(1.7)"
-    }, "-=0.2")
-    .from(".explore-btn", {
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      ease: "bounce.out"
-    }, "-=0.3");
-</script>
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-
-  gsap.from(".africa-shape", {
-    opacity: 0,
-    scale: 0.5,
-    duration: 1.5,
-    ease: "back.out(1.7)",
-    scrollTrigger: {
-      trigger: ".custom-section",
-      start: "top 80%",
-    }
-  });
-
-  // Headings
-  gsap.from(".content h2, .content h1", {
-    opacity: 0,
-    y: 40,
-    duration: 1,
-    stagger: 0.3,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".custom-section",
-      start: "top 70%",
-    }
-  });
-
-  // Paragraph
-  gsap.from(".content p", {
-    opacity: 0,
-    y: 30,
-    duration: 1.2,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".content p",
-      start: "top 85%",
-    }
-  });
-
-  // Facilities List
-  gsap.from(".facility-item", {
-    opacity: 0,
-    x: -50,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".facility-item",
-      start: "top 80%",
-    }
-  });
-
-  // Button
-  gsap.from(".uni-button", {
-    opacity: 0,
-    scale: 0.8,
-    duration: 1,
-    ease: "elastic.out(1, 0.5)",
-    scrollTrigger: {
-      trigger: ".uni-button",
-      start: "top 90%",
-    }
-  });
-</script>
-
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Contact headings
-  gsap.from(".contact-safari h2, .contact-safari h1", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    stagger: 0.2,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".contact-safari",
-      start: "top 85%",
-    }
-  });
-
-  // Input fields animation
-  gsap.from(".form-row input", {
-    opacity: 0,
-    y: 30,
-    duration: 0.8,
-    stagger: 0.15,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".form-row",
-      start: "top 85%",
-    }
-  });
-
-
-</script>
+<script src="script.js"></script>
