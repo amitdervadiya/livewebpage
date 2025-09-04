@@ -192,7 +192,7 @@
           Luxury Safari <br /> Experiences in Africa
         </h1>
 
-        <div class="flex items-center space-x-6 mb-6 max-sm:flex-col max-sm:items-center">
+        <div class="flex items-center space-x-6 mb-6 max-sm:flex-col max-sm:items-start">
           <span class="flex items-center gap-1">
             <img src="img/Check circle.png" alt="">
             <span>Private Reserves</span>
@@ -1278,17 +1278,7 @@
       }
     });
 
-  // Hero section animation
-  function playHeroAnimation() {
-    const heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-    heroTl
-      .from(".nav", { y: -80, opacity: 0, duration: 1 }) // navbar slides in
-      .from(".hero h2", { x: -50, opacity: 0, duration: 0.8 }, "-=0.5")
-      .from(".hero h1", { x: -50, opacity: 0, duration: 0.8 }, "-=0.4")
-      .from(".hero span", { y: 30, opacity: 0, duration: 0.6, stagger: 0.2 }, "-=0.3")
-      .from(".hero button", { y: 50, opacity: 0, duration: 0.6, stagger: 0.2 }, "-=0.4");
-  }
+ 
 </script>
 
 
