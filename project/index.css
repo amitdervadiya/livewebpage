@@ -22,7 +22,7 @@
   filter: blur(12px);
   position: absolute;
  width:100%;
- box-shadow: 20px 0px white;
+ box-shadow: 20px 20px white;
  top: -20px;
   z-index: 1;
 
