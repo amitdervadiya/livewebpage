@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nayari lodge</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,42 +20,51 @@
     rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
 
 </head>
 
 <body class="overflow-X-hidden">
+  <!-- Loader Section -->
   <section id="loading-section"
-  class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black z-500">
-  <div class="relative flex flex-col items-center">
+    class="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black z-500">
+    <div class="relative flex flex-col items-center">
 
-   
-    <div class="relative" id="logo-wrapper">
-      <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-teal-400"></div>
-      <div class="absolute inset-2 rounded-full border-4 border-transparent border-r-purple-500"></div>
-      <div
-        class="w-28 h-28 rounded-full bg-gradient-to-tr from-teal-400 via-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
-        <span class="text-2xl font-bold text-white">Nayati</span>
+      <!-- Logo Wrapper -->
+      <div class="relative" id="logo-wrapper">
+        <div class="absolute inset-0 rounded-full border-4 border-transparent border-t-teal-400"></div>
+        <div class="absolute inset-2 rounded-full border-4 border-transparent border-r-purple-500"></div>
+        <div
+          class="w-28 h-28 rounded-full bg-gradient-to-tr from-teal-400 via-blue-500 to-purple-500 flex items-center justify-center shadow-lg logo-main">
+          <span class="text-2xl font-bold text-white">Nayati</span>
+        </div>
       </div>
-    </div>
 
- 
-    <div class="mt-8 w-40 h-2 bg-gray-700 rounded-full overflow-hidden">
-      <div id="progress-bar" class="h-full bg-gradient-to-r from-teal-400 to-purple-500 w-0"></div>
-    </div>
+      <!-- Progress Bar -->
+      <div class="mt-8 w-40 h-2 bg-gray-700 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-teal-400 to-purple-500 w-0"></div>
+      </div>
 
-   
-    <p id="loading-text" class="mt-4 text-sm tracking-[0.3em] text-gray-300">LOADING CONTENT...</p>
-  </div>
-</section>
+      <!-- Loading Text -->
+      <p id="loading-text" class="mt-4 text-sm tracking-[0.3em] text-gray-300">LOADING CONTENT...</p>
+    </div>
+  </section>
+
+
+
+
 
 
   <section class="hero px-1 border w-[100%] flex items-center py-2   flex-col">
-    <header class="h-[81px] px-4 max-sm:p-0 w-[90%]  sm:w-[100%] mx-auto z-100">
-      <div class="nav flex items-center justify-around max-md:justify-between  w-full px-4">
+    <header class="h-[81px] px-4 max-sm:p-0 w-[100%]  sm:w-[100%] mx-auto z-100">
+      <div class="nav flex items-center justify-between  max-md:justify-between  w-full px-2">
 
         <div class="flex items-center gap-5">
           <div class="logo">
+            <a href="index.html">
             <img src="img/logo.png" class="w-[137px] h-[73px]" alt="">
+          </a>
           </div>
 
           <ul class="hidden md:flex gap-5 items-center">
@@ -81,9 +91,7 @@
                 </svg>
               </li>
             </a>
-            <a href="gallery.html">
-              <li class="nav-link">gallery</li>
-            </a>
+
             <a href="trip.html">
               <li class="nav-link">trip planner</li>
             </a>
@@ -117,7 +125,7 @@
               +91 6351676060
             </a>
           </button>
-          <button class="b2 ">plan your safari</button>
+          <a href="#plan"> <button class="b2 ">plan your safari</button> </a>
         </div>
 
 
@@ -143,9 +151,9 @@
         </button>
         <a href="index.html" class="hover:text-gray-300 transition">Home</a>
         <a href="About.html" class="hover:text-gray-300 transition">About</a>
-        <a href="facility.html" class="hover:text-gray-300 transition">Facilities</a>
+        <a href="Facility.html" class="hover:text-gray-300 transition">Facilities</a>
         <a href="Safari&tours.html" class="hover:text-gray-300 transition">Safaris & Tours</a>
-        <a href="gallery.html" class="hover:text-gray-300 transition">Gallery</a>
+
         <a href="trip.html" class="hover:text-gray-300 transition">Trip Planner</a>
         <div class="flex flex-col gap-3 mt-4 max-sm:items-center">
           <a href="tel:+916351676060">
@@ -176,9 +184,12 @@
             </button>
           </a>
 
-          <button class="h-[50px] w-[190px] bg-[#849368] text-white rounded hover:bg-gray-200 transition">
-            Plan Your Safari
-          </button>
+       
+            <button
+              class="h-[50px] w-[190px] bg-[#849368] text-white rounded hover:bg-gray-200 transition">
+              <a href="#plan">     Plan Your Safari     </a>
+            </button>
+      
         </div>
       </div>
 
@@ -434,67 +445,69 @@
       <h2 class="subtitle">Explore</h2>
       <h1 class="title">Our Facilities</h1>
 
-      <div class="facilities-grid">
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector 8.png" alt="">
+      <a href="Facility.html">
+        <div class="facilities-grid">
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector 8.png" alt="">
+            </div>
+            <p class="facility-text">Swimming Pool</p>
           </div>
-          <p class="facility-text">Swimming Pool</p>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (1).png" alt="">
+            </div>
+            <p class="facility-text">Fitness</p>
+          </div>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (2).png" alt="">
+            </div>
+            <p class="facility-text">Restaurant</p>
+          </div>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (3).png" alt="">
+            </div>
+            <p class="facility-text">Car Fleet</p>
+          </div>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (4).png" alt="">
+            </div>
+            <p class="facility-text">Spa</p>
+          </div>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (5).png" alt="">
+            </div>
+            <p class="facility-text">Golf</p>
+          </div>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (6).png" alt="">
+            </div>
+            <p class="facility-text">Bar</p>
+          </div>
+
+          <div class="facility-card">
+            <div class="icon-box">
+              <img src="img/Vector (7).png" alt="">
+            </div>
+            <p class="facility-text">Lounge</p>
+          </div>
         </div>
 
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (1).png" alt="">
-          </div>
-          <p class="facility-text">Fitness</p>
+        <div class="button-wrap">
+          <a href="Facility.html"> <button class="explore-btn">EXPLORE MORE</button></a>
         </div>
-
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (2).png" alt="">
-          </div>
-          <p class="facility-text">Restaurant</p>
-        </div>
-
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (3).png" alt="">
-          </div>
-          <p class="facility-text">Car Fleet</p>
-        </div>
-
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (4).png" alt="">
-          </div>
-          <p class="facility-text">Spa</p>
-        </div>
-
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (5).png" alt="">
-          </div>
-          <p class="facility-text">Golf</p>
-        </div>
-
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (6).png" alt="">
-          </div>
-          <p class="facility-text">Bar</p>
-        </div>
-
-        <div class="facility-card">
-          <div class="icon-box">
-            <img src="img/Vector (7).png" alt="">
-          </div>
-          <p class="facility-text">Lounge</p>
-        </div>
-      </div>
-
-      <div class="button-wrap">
-        <button class="explore-btn">EXPLORE MORE</button>
-      </div>
+      </a>
     </section>
   </section>
 
@@ -538,9 +551,11 @@
             <br> and other beverages. The lodge came to life back in <br>1998 and is 100% Danish owned.
           </p>
 
-          <button class="bg-[#6b7a4b] h-[50px] uni-button text-white universal rounded hover:bg-[#4d5535] transition">
-            START PLANNING YOUR SAFARI
-          </button>
+          <a href="#plan"> <button
+              class="bg-[#6b7a4b] h-[50px] uni-button text-white universal rounded hover:bg-[#4d5535] transition">
+              START PLANNING YOUR SAFARI
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -748,10 +763,11 @@
         </ul>
 
         <!-- Button with z-index -->
-        <button
-          class="relative z-20 bg-[var(--green)] text-white px-6 py-3 rounded-md shadow-md hover:bg-green-800 transition">
-          START PLANNING YOUR SAFARI
-        </button>
+        <a href="#plan"> <button
+            class="relative z-20 bg-[var(--green)] text-white px-6 py-3 rounded-md shadow-md hover:bg-green-800 transition">
+            START PLANNING YOUR SAFARI
+          </button>
+        </a>
       </div>
 
       <!-- Right Images -->
@@ -892,7 +908,7 @@
   </section>
 
 
-  <section class="bg-contact flex flex-col  items-center  sm:px-6 md:px-10 py-10 relative">
+  <section class="bg-contact flex flex-col  items-center  sm:px-6 md:px-10 py-10 relative " id="plan">
     <div class="blurwhite w-full">
 
     </div>
@@ -902,21 +918,49 @@
       <h2 class="text-2xl sm:text-3xl md:text-4xl text-[var(--grey)] ">Secure Your Spot for 2025</h2>
       <h1 class="text-3xl sm:text-4xl md:text-5xl text-[var(--green)] font-bold">Start Your Safari Inquiry</h1>
 
+      <form id="travel-form"
+        class="form-row w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+        <input type="text" name="name" placeholder="Name" required class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="email" name="user_email" placeholder="Email" required
+          class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="number" name="phone" placeholder="Phone No" required class="indesign w-full sm:w-[48%] md:w-[23%]">
+        <input type="date" name="travel_date" placeholder="Travel Date" required
+          class="indesign w-full sm:w-[48%] md:w-[23%] z-20">
 
-      <div class="form-row w-full flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
-        <input type="text" placeholder="Name" class="indesign w-full sm:w-[48%] md:w-[23%]">
-        <input type="text" placeholder="Email" class="indesign w-full sm:w-[48%] md:w-[23%]">
-        <input type="number" placeholder="Phone No" class="indesign w-full sm:w-[48%] md:w-[23%]">
-        <input type="date" placeholder="Travel Date" class="indesign w-full sm:w-[48%] md:w-[23%] z-20">
-      </div>
+        <button type="submit" class="bg-[var(--green)] text-white font-semibold px-6 py-2 rounded-md mt-4 sm:mt-0">
+          SUBMIT
+        </button>
+      </form>
+
+      <script>
+        (function () {
+          emailjs.init("zmpiKf0hhhQ5NenbE");
+        })();
+
+        document.getElementById("travel-form").addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_wig8yrd", "template_5c3j30i", this)
+            .then(() => {
+              alert("✅ Form Submitted Successfully!");
+              this.reset();
+            })
+            .catch((error) => {
+              console.error("❌ EmailJS Error:", error);
+              alert("❌ Failed, please try again.");
+            });
+        });
+      </script>
+
+
 
 
       <div class="flex flex-col sm:flex-row gap-4 items-center">
-        <button
-          class="bg-[var(--green)] px-6 py-2 text-white rounded-md shadow-md z-10 hover:scale-105 transition">Start
-          Planning Your Safari</button>
+        <a href="#plan"> <button
+            class="bg-[var(--green)] px-6 py-2 text-white rounded-md shadow-md z-10 hover:scale-105 transition">Start
+            Planning Your Safari </button></a>
 
-        <button
+        <a href="tel=+91 6351676060"></a> <button
           class="flex px-6 py-2 justify-center items-center gap-2 border border-black text-black  z-10 rounded-md hover:bg-white hover:text-[var(--green)] transition">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
             <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -924,7 +968,7 @@
                 d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
             </g>
           </svg>
-          +27 15 590 8328
+          +91 6351676060
         </button>
       </div>
 
@@ -950,14 +994,15 @@
                 d="M10.75 16.75a1.25 1.25 0 1 0 2.5 0a1.25 1.25 0 1 0-2.5 0M9.5 10.5a1.25 1.25 0 0 0 1.25-1.25a1.25 1.25 0 1 1 1.75 1.15a2.91 2.91 0 0 0-1.75 2.67v.56a1.25 1.25 0 1 0 2.5 0v-.56a.42.42 0 0 1 .25-.38a3.75 3.75 0 1 0-5.25-3.44A1.25 1.25 0 0 0 9.5 10.5" />
             </svg> TALK TO OUR SAFARI EXPERTS
           </button>
-          <button class="flex px-5 py-2 justify-center items-center gap-2 border border-white text-white">
+          <a href="tel=+91 6351676060"></a> <button
+            class="flex px-5 py-2 justify-center items-center gap-2 border border-white text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path
                   d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z" />
               </g>
             </svg>
-            +27 15 590 8328
+            +91 6351676060
           </button>
         </div>
       </div>
@@ -1082,18 +1127,59 @@
       class="relative container mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16 text-white flex flex-col justify-between min-h-screen">
 
 
-      <div class="text-center mb-10 z-10 " id="contact">
-        <h2 class="text-3xl sm:text-lg italic text-[#998254]">Get Exclusive Safari Deals & Tips!</h2>
-        <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">Join Our Newsletter</h1>
-        <form class=" sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
-          <input type="email" placeholder="Email" class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
 
-          <button type="submit"
-            class="bg-[var(--green)] text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
+      <div class="text-center mb-10 z-10" id="contact">
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-lg italic text-[#998254]">
+          Get Exclusive Safari Deals & Tips!
+        </h2>
+        <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#3A3E2D]">
+          Join Our Newsletter
+        </h1>
+
+        <!-- Newsletter Form -->
+        <form onsubmit="sendEmail(event)" class="sm:flex-row justify-center items-center gap-3 max-w-lg mx-auto">
+
+          <!-- Email Input -->
+          <input type="email" name="user_email" placeholder="Email" required
+            class="px-4 py-2 w-full mb-3 text-gray-900 indesign" />
+
+          <!-- Subscribe Button -->
+          <button type="submit" class="bg-[var(--green)] hover:bg-green-700 transition-all duration-300 
+                   text-white font-semibold px-6 py-2 rounded-md w-full sm:w-auto">
             SUBSCRIBE NOW
           </button>
         </form>
+
+        <!-- Success Message (hidden by default) -->
+        <p id="successMsg" class="hidden text-green-600 mt-4 text-lg font-medium">
+          🎉 Thank you for subscribing!
+        </p>
       </div>
+
+
+
+      <script>
+        (function () {
+          emailjs.init("zmpiKf0hhhQ5NenbE");
+        })();
+
+        function sendEmail(event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_wig8yrd", "template_oxd29zo", event.target)
+            .then(() => {
+              document.getElementById("successMsg").classList.remove("hidden");
+              event.target.reset();
+            })
+            .catch((error) => {
+              console.error("❌ EmailJS Error:", error);
+              alert("❌ Failed, please try again.");
+            });
+        }
+      </script>
+
+
 
 
       <h1 class="text-5xl sm:text-7xl md:text-[100px] lg:text-[150px] italic font-bold text-center leading-tight mb-12">
@@ -1108,7 +1194,7 @@
           <p class="mb-4 text-sm sm:text-base">
             Located in the heart of the Greater Kruger, at our luxury lodges enjoy an unforgettable safari experience.
           </p>
-          <a href="#" class="inline-block bg-[var(--green)] text-white px-4 py-2 rounded-md text-sm sm:text-base">
+          <a href="#plan" class="inline-block bg-[var(--green)] text-white px-4 py-2 rounded-md text-sm sm:text-base">
             PLAN YOUR SAFARI
           </a>
 
@@ -1243,6 +1329,7 @@
 </body>
 
 </html>
+<<<<<<< HEAD
 
 <script>
   // Loader timeline
@@ -1590,3 +1677,6 @@
 
 
 </script>
+=======
+<script src="script.js"></script>
+>>>>>>> 1c939f23ccff07204bc05b2778fcc1ddd6567e23
