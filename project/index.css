@@ -22,7 +22,7 @@
   filter: blur(12px);
   position: absolute;
  width:100%;
- box-shadow: 20px 20px white;
+  box-shadow: 40px 40px rgba(244, 247, 251, 0.3); /* blue glow */
  top: -20px;
   z-index: 1;
 
@@ -779,9 +779,9 @@ width: 100%;
     background-color: white;
     filter: blur(12px);
     position: absolute;
+    width: 100%;
     top: -20px;
- 
- 
+    box-shadow: 20px 20px rgba(244, 247, 251, 0.3); 
     z-index: 1;
   }
   
